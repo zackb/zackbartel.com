@@ -125,7 +125,9 @@
                         GetBack Media<br/>
                     </p>
                     <p><more>
-                    My efforts at the GetBack focused on building a retro social media community and business. This included designing and implementing frontend and backend software systems and scaling to handle 1 million page views per day.
+                    My efforts at GetBack focused on building a retro social media community and business. This included designing and implementing frontend and backend software systems and scaling to handle 1 million page views per day.
+                    <br />
+                    The web application let you "turn back the clock" to any year and interact with the songs, movies, tv shows, games, actors, and news headlines of the time.
                     <br />
                     As part of my role, I built a video and image delivery pipeline as well as cloud infrastructure to power it.
                     </more></p>
@@ -558,35 +560,43 @@
                 <p class="project-label">WEB VIDEO INDEXING<br />
                     <em>Grails, MariaDB, TokuDB, RabbitMQ, Memcached, Redis, AWS</em>
                 </p>
-                <p><more>
-                    This is a 
-                <br />
-                Placeholder
-                <br />
-                <br/><br/>
+                <p>
+                <more>
+                    We built a web video indexing system which scaled to crawl 2000 urls per second, serve 1000 images per second, and deliver data to millions of users accross dozens of device classes.
+                    <br/>
+                    To scale such a system a service-oriented approach was taken to force clear separation of concerns. This allowed the system to use technologies appropriate for a specific problem while insulating the rest of the services from those implementation details.
+                    <br />
+                    I built a web and feed crawling system using work scheduling and distribution through queing. Each Grails worker process was able to operate and scale independently. This data is then inteligently categorized using NLP, Freebase, and some proprietary algorithms and stored in SQL databases that are horizontally sharded.
+                    <br />
+                    The data is delivered to end users via a REST JSON API which is also independently scalable horizontally. Images are ingested and delivered using a custom image processing system. The image server workers are able to scale, resize, color correct, and cache images on demand. Redundancy is achieved by a two level filesystem failover to S3.
+                    <br />
+                    I also managed the DevOps of hundreds of servers and services on Amazon Web Services.
+                    <br/><br/>
                 </more>
             </p>
             </div>
 
             <div class="col-lg-9 col-lg-offset-3">
                 <p class="project-label">WEBKIT BASED RENDERER<br />
-                    <em>C++, Qt, CMake
-                    </em>
-                    </p>
+                    <em>C++, Qt, CMake</em>
+                </p>
                 <p><more>
+                 As much of the web today is rendered using JavaScript rather than conventional HTML markup, a way to rapidly render millions of webpages is incredibly useful.
                 <br />
+                Using WebKit and the WebKitCore and JavaScriptCore libraries I built an efficient headless web renderer that was able to execute JavaScript on a DOM and deliver the HTML output via an API.
                 <br />
-                <br />
+                I loved the opportunity to learn and apply the Qt framework. I hope I get to use it again someday.
+                <br /><br/>
                 </more>
                 </p>
             </div>
 
             <div class="col-lg-9 col-lg-offset-3">
                 <p class="project-label">ANDROID TELEVISIONS<br />
-                    <em>Android, Java, JUnit
-                    </em>
+                    <em>Android, Java, JUnit</em>
                 </p>
                 <p><more>
+                Writing Android Television applications is hard. Harder than it should be.
                 <br />
                 <br/><br/>
                 </more>
