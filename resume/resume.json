@@ -1,94 +1,190 @@
 {
-  "bio": {
-    "firstName": "Zack",
-    "lastName": "Bartel",
-    "email": {
-      "work": "zack@bartel.com",
-      "personal": "zack@bartel.com"
-    },
-    "phone": {
-      "work": "503.320.1884",
-      "personal": "503.320.1884"
-    },
-    "summary": "Nine years of experience developing software applications using a variety of techniques and technologies. Grown businesses by consistently delivering software solutions for all layers of the technology stack",
+  "basics": {
+    "name": "Zack Bartel",
+    "label": "Programmer",
+    "picture": "",
+    "email": "zack@bartel.com",
+    "phone": "503.320.1884",
+    "website": "http://zackbartel.com",
+    "summary": "I'm a full stack developer blended with experience building and shipping iOS, Android, and TV applications. Over the years I have absorbed technologies and systems making me a capable generalist. I love to learn, and will continue to gain as much knowledge as I possibly can. When not behind a computer for work or for fun, I teach boxing to kids and adults, test my culinary skills, and fumble around with a guitar.",
     "location": {
+      "address": "Address",
+      "postalCode": "OR 97219",
       "city": "Portland",
       "countryCode": "US",
-      "state": "Oregon"
+      "region": "Oregon"
     },
-    "websites": {
-      "blog": "http://zackbartel.com"
-    },
-    "profiles": {
-      "github": "zackb",
-      "twitter": "zackb"
-    }
+    "profiles": [
+      {
+        "network": "Twitter",
+        "username": "zackb",
+        "url": "https://twitter.com/zackb"
+      },
+      {
+        "network": "GitHub",
+        "username": "zackb",
+        "url": "https://github.com/zackb"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "zackbartel",
+        "url": "https://www.linkedin.com/in/zackbartel"
+      }
+    ]
   },
   "work": [
     {
       "company": "Frequency",
-      "position": "Software Engineer",
+      "position": "Principal Software Engineer",
       "website": "http://frequency.com",
-      "startDate": "2014-06-29",
-      "endDate": "2012-06-29",
-      "summary": "Give an overview of your responsibilities at the company",
+      "startDate": "2010-01-01",
+      "endDate": "Current",
+      "summary": "During my time at Frequecny I have had opportunities to work on an exceptional variety of development projects across domains. This has ranged from designing and implementing large scale multi-tier applications to building and shipping consumer applications. Internally, I have championed new technologies and methodologies, as well as led small teams and mentored developers.",
       "highlights": [
-        "Increased profits by 20% from 2011-2012 through viral advertising"
+        "Built web video indexing system which scaled to crawl 2000 urls per second, serve 1000 images per second",
+        "Managed the DevOps of hundreds of servers and services on Amazon Web Services",
+        "Designed, built, and shipped iPhone, iPad, Android, and Android TV apps",
+        "Actively managed the interviewing process and built a team",
+        "Java, Grails, MariaDB, TokuDB, RabbitMQ, Elasticsearch, Memcached, Tomcat, Redis, Qt4, JavaScript, AWS"
+      ]
+    },
+    {
+      "company": "GetBack Media",
+      "position": "Senior Software Engineer",
+      "website": "http://getback.com",
+      "startDate": "2008-04-01",
+      "endDate": "2010-01-01",
+      "summary": "My efforts at GetBack focused on building a retro social media community and business. This included designing and implementing frontend and backend software systems and scaling to handle 1 million page views per day. The web application let you 'turn back the clock' to any year and interact with the songs, movies, tv shows, games, actors, and news headlines of the time. As part of my role, I built a video and image delivery pipeline as well as cloud infrastructure to power it.",
+      "highlights": [
+        "Build a video and image delivery pipeline as well as cloud infrastructure to power it",
+        "Design and implement frontend and backend software systems and scale to handle 1 million page views per day",
+        "Ingest and normalize data from dozens of sources",
+        "Java, PHP, Nginx, Solr, LimeLight, AWS"
+      ]
+    },
+    {
+      "company": "Tectura",
+      "position": "Software Engineer",
+      "website": "http://tectura.com/services/tectura-services/applied-engineering-solutions",
+      "startDate": "2006-06-01",
+      "endDate": "2008-04-01",
+      "summary": "At Tectura I had the opportunity to work in the aerospace industry consulting on a number of projects for an airplane manufacturer. I built flight test software and flight data analysis tools. Contributing code to the Linux kernel to solve a problem without hacky workarounds was one of the proudest moments of my career. Within the broader team, I participated in designing, prototyping and refining internal development tools and processes.",
+      "highlights": [
+        "Work closely with clients in highly regulated aerospace industry to solve security, performace and design related software problems",
+        "Cross platform development for Linux Intel and PowerPC architectures in C/C++",
+        "Design and implement applications to analyze flight data (ACARS)",
+        "Develop custom distribution of the GNU/Linux Operating System",
+        "Work with open source community to develop and improve open source software for use on the aircraft",
+        "Java, C, PostgreSQL, Oracle 10G, SWT, Linux, Tomcat"
+      ]
+    },
+    {
+      "company": "Open Source Lab",
+      "position": "Software Developer",
+      "website": "http://osuosl.org",
+      "startDate": "2005-10-01",
+      "endDate": "2006-09-01",
+      "summary": "The time I spent at the Open Source Lab was the most valuable of my college years. I worked with and was mentored by some of the most talented people I have ever met. We built open source tools to manage the entire university network as well as hosting tools and infrastructure that is home to the largest open source software projects in the world. Learning how to work with the open source community was a transformative experience.",
+      "highlights": [
+        "Build open source network management tool for university network",
+        "Build open source hosting tools for the largest open source projects in the world",
+        "Java, PHP, MySQL, DNS, DHCP, RIP, Linux"
+      ]
+    },
+    {
+      "company": "Business Solutions Group",
+      "position": "Student Software Developer",
+      "website": "http://bsg.oregonstate.edu",
+      "startDate": "2004-07-01",
+      "endDate": "2005-11-01",
+      "summary": "My first job in the software industry taught me the skills to translate customer needs into engineering requirements. Learning how to solve real world problems using software was a wonderful learning experience.",
+      "highlights": [
+        "Build contract management software for several university departments",
+        "C#, ASP.NET, IIS, SQL Server"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Sweet Science Boxing",
+      "position": "Trainer",
+      "website": "http://www.sweetscienceboxing.org",
+      "startDate": "2008-01-01",
+      "endDate": "Current",
+      "summary": "I teach boxing to kids and adults",
+      "highlights": [
+        "Awarded 'Instructor of the Month'"
       ]
     }
   ],
   "education": [
     {
       "institution": "Oregon State University",
-      "startDate": "2011-06-01",
-      "endDate": "2014-01-01",
-      "area": "Information Technology",
+      "area": "Computer Science",
       "studyType": "Bachelor",
+      "startDate": "2002",
+      "endDate": "2006",
+      "gpa": "3.7",
       "courses": [
-        "DB1101 - Basic SQL",
-        "CS2011 - Java Introduction"
+        "CS420 - Graph Theory",
+        "CS450 - Computer Graphics",
+        "CS440 - Database Management Systems",
+        "CS476 - Computer Networking"
       ]
-    }
-  ],
-  "awards": [
-    {
-      "title": "Digital Compression Pioneer Award",
-      "date": "2014-11-01",
-      "awarder": "Techcrunch"
-    }
-  ],
-  "publications": [
-    {
-      "name": "Video compression for 3d media",
-      "publisher": "Hooli",
-      "releaseDate": "2014-10-01",
-      "website": "http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)"
     }
   ],
   "skills": [
     {
-      "name": "Web Development",
+      "name": "Back End",
       "level": "Master",
       "keywords": [
-        "HTML",
-        "CSS",
-        "Javascript"
+        "Java",
+        "C",
+        "C++",
+        "Grails",
+        "MySql and PostgreSQL",
+        "Redis"
       ]
     },
     {
-      "name": "Compression",
+      "name": "Front End",
       "level": "Master",
       "keywords": [
-        "Mpeg",
-        "MP4",
-        "GIF"
+        "iOS",
+        "Android",
+        "SWT", "Qt",
+        "JavaScript",
+        "HTML5"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Boxing",
+      "keywords": [
+        "Instruction",
+        "Competition"
       ]
     }
   ],
   "references": [
     {
-      "name": "Erlich Bachman",
-      "reference": "It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
+      "name": "David Huseby, OS Security at Mozilla Corporation",
+      "reference": "Zack is always a huge asset to the company he works for. I worked with Zack at Tectura and then at GetBack and at both companies, he was always fun to work with. His ability to quickly solve problems and to push through difficult tasks makes him invaluable when it comes to staying on schedule and delivering a product. Zack has a wide range of interests that carry over into his work. He knows how to manage servers, he knows how to set up and configure development infrastructure (e.g. revision control, bug tracking, etc), he knows how to design, document and write code, and he knows how to test and deliver the final product. I hope I get a chance to work with Zack again in the future."
+    },
+    {
+        "name": "Eric Stoltz, Product Engineer at Zynx Health",
+        "reference": "I can't imagine how any team could have a more enthusiastic, dedicated and capable team member than Zack. Zack is always the first to volunteer for any complicated task, and he always completes that task quickly with aplomb and elegant simplicity. He is a joy to work with, witty and efficient in a way that makes everything he does seem effortless, no matter how complicated it may be. He is the first person we turn to when a problem seems insurmountable, and he always delivers. My experience with Zack has been with him in Portland and me in Los Angeles, and it always seems as though he is right there at my side, with frequently instantaneous response. If you are looking for someone who is totally responsive; creative in his approach; dedicated to the simplest, most elegant solution and highly informed as to the best practices in front-end and back-end solutions, Zack is your guy. Humble, soft-spoken and genial, his laid-back persona masks a powerful intellect."
+    },
+    {
+        "name": "David Lewis, Software Architect at Disney Interactive",
+        "reference": "Reported to and worked directly with Zack at GetBack Media, Inc. A talented and experienced software engineer, Zack was able to see all sides of a problem that faced him. He worked extremely well under high-pressure situations, dealing with the dilemma with a calm and collected attitude, and was able to resolve the issues that he faced very quickly and efficiently. Zack is a great communicator and was very enjoyable and a pleasure to work with."
     }
   ]
 }

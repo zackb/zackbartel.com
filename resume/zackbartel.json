@@ -224,11 +224,13 @@
             "items": [
                 "President, Chi Phi Fraternity"
             ]
-        },
+        }
+        /*
         "memberships": {
             "committees": [
                 "Member of the ACM awesomest humans secret group, 2008-present"
             ]
         }
+        */
     }
 }
