@@ -39,7 +39,7 @@
       "website": "http://frequency.com",
       "startDate": "2010-01-01",
       "endDate": "Current",
-      "summary": "During my time at Frequecny I have had opportunities to work on an exceptional variety of development projects across domains. This has ranged from designing and implementing large scale multi-tier applications to building and shipping consumer applications. Internally, I have championed new technologies and methodologies, as well as led small teams and mentored developers.",
+      "summary": "During my time at Frequency I have had opportunities to work on an exceptional variety of development projects across domains. This has ranged from designing and implementing large scale multi-tier applications to building and shipping consumer applications. Internally, I have championed new technologies and methodologies, as well as led small teams and mentored developers.",
       "highlights": [
         "Built web video indexing system which scaled to crawl 2000 urls per second, serve 1000 images per second",
         "Managed the DevOps of hundreds of servers and services on Amazon Web Services",
