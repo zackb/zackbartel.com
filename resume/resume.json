@@ -1,0 +1,94 @@
+{
+  "bio": {
+    "firstName": "Zack",
+    "lastName": "Bartel",
+    "email": {
+      "work": "zack@bartel.com",
+      "personal": "zack@bartel.com"
+    },
+    "phone": {
+      "work": "503.320.1884",
+      "personal": "503.320.1884"
+    },
+    "summary": "Nine years of experience developing software applications using a variety of techniques and technologies. Grown businesses by consistently delivering software solutions for all layers of the technology stack",
+    "location": {
+      "city": "Portland",
+      "countryCode": "US",
+      "state": "Oregon"
+    },
+    "websites": {
+      "blog": "http://zackbartel.com"
+    },
+    "profiles": {
+      "github": "zackb",
+      "twitter": "zackb"
+    }
+  },
+  "work": [
+    {
+      "company": "Frequency",
+      "position": "Software Engineer",
+      "website": "http://frequency.com",
+      "startDate": "2014-06-29",
+      "endDate": "2012-06-29",
+      "summary": "Give an overview of your responsibilities at the company",
+      "highlights": [
+        "Increased profits by 20% from 2011-2012 through viral advertising"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Oregon State University",
+      "startDate": "2011-06-01",
+      "endDate": "2014-01-01",
+      "area": "Information Technology",
+      "studyType": "Bachelor",
+      "courses": [
+        "DB1101 - Basic SQL",
+        "CS2011 - Java Introduction"
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Digital Compression Pioneer Award",
+      "date": "2014-11-01",
+      "awarder": "Techcrunch"
+    }
+  ],
+  "publications": [
+    {
+      "name": "Video compression for 3d media",
+      "publisher": "Hooli",
+      "releaseDate": "2014-10-01",
+      "website": "http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Web Development",
+      "level": "Master",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "Javascript"
+      ]
+    },
+    {
+      "name": "Compression",
+      "level": "Master",
+      "keywords": [
+        "Mpeg",
+        "MP4",
+        "GIF"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Erlich Bachman",
+      "reference": "It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
+    }
+  ]
+}

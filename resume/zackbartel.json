@@ -1,0 +1,234 @@
+{
+    "settings": {
+        "glyphicons" : true
+    },
+    "firstname": "Zack",
+    "familyname": "Bartel",
+    "linkedin_id": "zackbartel",
+    "github_id": "zackb",
+    "twitter_id": "zackb",
+    "bio_data": {
+        "email": "zack@bartel.com",
+        "phone": "503.320.1884",
+        "website": "http://zackbartel.com",
+        "stars": ["Servers", "Systems", "iOS", "Android", "Distributed Computing"],
+        "summary": {
+            "points":[
+                "Nine years of experience developing software applications using a variety of techniques and technologies",
+                "Grown businesses by consistently delivering software solutions for all layers of the technology stack"
+            ]
+        },
+        "github_projects": {
+            "details": [
+                {
+                    "project_name": "zackb/code",
+                    "tagline": "Toolbox",
+                    "description": [
+                        "Code snippets"
+                    ]
+                }
+            ]
+        },
+        "skills": {
+            "details": [
+                {
+                    "type": "Programming Languages",
+                    "items": [
+                        "Java",
+                        "C",
+                        "Objective-C",
+                        "C++",
+                        "Groovy",
+                        "Javascript",
+                        "Python"
+                    ]
+                },
+                {
+                    "type": "Web Frameworks",
+                    "items": [
+                        "Grails",
+                        "Spring",
+                        "Play!",
+                        "Undertow.io"
+                    ]
+                },
+                {
+                    "type": "Databases",
+                    "items": [
+                        "MySQL",
+                        "Redis",
+                        "PostgreSQL",
+                        "Oracle 9/10g"
+                    ]
+                }
+            ]
+        },
+        "education": {
+        "show_gpa": false,
+            "schools": [
+                {
+                    "degree": "Bachelor of Science",
+                    "major": "Computer Science",
+                    "institution": "Oregon State University",
+                    "graduation_year": 2006,
+                    "gpa": "3.5"
+                },
+                {
+                    "degree": "Bachelor of Science",
+                    "major": "Business Administration",
+                    "institution": "Oregon State University",
+                    "graduation_year": 2006,
+                    "gpa": "3.7"
+                }
+            ]
+        },
+        "experience": {
+            "items": [
+                {
+                    "title": "Senior Software Engineer",
+                    "organisation": "Frequency",
+                    "location": "Los Angeles, CA",
+                    "from": "Jan. 2010",
+                    "to": "Current",
+                    "details": [
+                        "Built web video indexing system to scale to crawling 2000+ unique urls per second",
+                        "Code html rendering and javascript execution interface in C++ using the WebKit engine",
+                        "Design and implement REST API for all Frequency clients, products, and partners",
+                        "Built image serving infrastructure to redundantly scale and serve 1000 resized images per second",
+                        "Designed and developed iOS applications for iPad and iPhones/iPod",
+                        "Designed and developed Android applications for TVs, Tablets, and Phones"
+                    ],
+                    "technology_used": {
+                        "tools": [
+                            "Grails",
+                            "AWS",
+                            "MySQL",
+                            "MongoDB",
+                            "Redis",
+                            "Memcached",
+                            "RabbitMQ",
+                            "Tomcat",
+                            "Nginx",
+                            "iOS", "Android"
+                        ]
+                    }
+                },
+                {
+                    "title": "Software Engineer",
+                    "organisation": "GetBack Media, Inc",
+                    "location": "Santa Monica, CA",
+                    "from": "Apr. 2008",
+                    "to": "Jan. 2010",
+                    "details": [
+                        "Act as team lead to develop PHP LAMP web application for web startup",
+                        "Migrated self-hosted solution to Amazon EC2 and S3",
+                        "Integrate data from various sources: AMG/BMG/UMG, Getty, Flickr, MSN Video, YouTube, SeeqPod, PhotoBucket, OpenID, Facebook, Twitter"
+                    ],
+                    "technology_used": {
+                        "tools": [
+                            "PHP", "Nginx", "MySQL",
+                            "AWS", "Linux",
+                            "Java", "ActiveMQ"
+                        ]
+                    }
+                },
+                {
+                    "title": "Software Engineer",
+                    "organisation": "Tectura Corporation",
+                    "location": "Seattle, WA",
+                    "from": "Jun. 2006",
+                    "to": "Apr. 2008",
+                    "details": [
+                        "Worked with clients in a highly regulated aerospace industry to solve security, performace and design related software problems",
+                        "Cross platform development for Linux Intel and PowerPC architectures in C/C++",
+                        "Airplane Health Management J2EE web application using JSP, Oracle and Java backend",
+                        "Developed Java SWT based application to analyze and present flight data",
+                        "Developed and tested custom distribution of the GNU/Linux Operating System to be used on the aircraft",
+                        "Worked with Open Source community to develop and improve Open Source software to be used on the aircraft"
+                    ],
+                    "technology_used": {
+                        "tools": [
+                            "Java", "SWT", "Spring",
+                            "C", "C++", "Linux",
+                            "PostgreSQL",
+                            "Oracle 10G"
+                        ]
+                    }
+                },
+                {
+                    "title": "Student Software Developer",
+                    "organisation": "OSU Open Source Lab",
+                    "location": "Oregon State University",
+                    "from": "Oct. 2005",
+                    "to": "Sep. 2006",
+                    "details": [
+                        "Develop network management software for Oregon State University"
+                    ],
+                    "technology_used": {
+                        "tools": [
+                            "PHP",
+                            "Perl",
+                            "Apache", "MySQL", "Linux", "xen"
+                        ]
+                    }
+                },
+                {
+                    "title": "Student Software Developer",
+                    "organisation": "Business Solutions Group",
+                    "location": "Oregon State University",
+                    "from": "July. 2004",
+                    "to": "Nov. 2005",
+                    "details": [
+                        "Design and develop custom software solutions for various business entities",
+                        "Used ASP.NET, C\\#, and SQL Server to solve customer needs"
+                    ],
+                    "technology_used": {
+                        "tools": [
+                            "C\\#",
+                            ".NET",
+                            "SQL Server"
+                        ]
+                    }
+                }
+            ]
+        },
+        "other_projects": {
+            "items": [
+                {
+                    "headline": "Did that thing",
+                    "points": [
+                        "Got first place."
+                    ]
+                }
+            ]
+        },
+        "undergrad_courses": [
+            {
+                "name": "Computer Networking",
+                "url": "http://catalog.oregonstate.edu/CourseDetail.aspx?subjectcode=CS&coursenumber=476"
+            },
+            {
+                "name": "Database Management Systems",
+                "url": "http://catalog.oregonstate.edu/CourseDetail.aspx?subjectcode=CS&coursenumber=440"
+            },
+            {
+                "name": "Computer Graphics",
+                "url": "http://catalog.oregonstate.edu/CourseDetail.aspx?subjectcode=CS&coursenumber=450"
+            },
+            {
+                "name": "Graph Theory",
+                "url": "http://catalog.oregonstate.edu/CourseDetail.aspx?subjectcode=CS&coursenumber=420"
+            }
+        ],
+        "extra_curricular": {
+            "items": [
+                "President, Chi Phi Fraternity"
+            ]
+        },
+        "memberships": {
+            "committees": [
+                "Member of the ACM awesomest humans secret group, 2008-present"
+            ]
+        }
+    }
+}
