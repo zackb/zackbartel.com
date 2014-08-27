@@ -6,3 +6,6 @@ json_resume:
 
 pdf:
 	resume export resume --format pdf --theme modern
+
+html:
+	resume export resume --format html --theme modern
