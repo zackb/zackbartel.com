@@ -6,7 +6,7 @@
     "email": "zack@bartel.com",
     "phone": "503.320.1884",
     "website": "http://zackbartel.com",
-    "summary": "I'm a full stack developer blended with experience building and shipping iOS, Android, and TV applications. Over the years I have absorbed technologies and systems making me a capable generalist. I love to learn, and will continue to gain as much knowledge as I possibly can. When not behind a computer for work or for fun, I teach boxing to kids and adults, test my culinary skills, and fumble around with a guitar.",
+    "summary": "I'm a full stack developer blended with experience building and shipping iOS, Android, and TV applications. Over the years I have absorbed technologies and systems making me a capable generalist. I love to learn, and will continue to gain as much knowledge as I possibly can. When not behind a computer for work or for fun, I teach boxing, test my culinary skills, and fumble around with a guitar.",
     "location": {
       "address": "Address",
       "postalCode": "OR 97219",
@@ -38,12 +38,12 @@
       "position": "Principal Software Engineer",
       "website": "http://frequency.com",
       "startDate": "2010-01-01",
-      "endDate": "Current",
+      "endDate": "2014-10-01",
       "summary": "During my time at Frequency I have had opportunities to work on an exceptional variety of development projects across domains. This has ranged from designing and implementing large scale multi-tier applications to building and shipping consumer applications. Internally, I have championed new technologies and methodologies, as well as led small teams and mentored developers.",
       "highlights": [
         "Built web video indexing system which scaled to crawl 2000 urls per second, serve 1000 images per second",
         "Managed the DevOps of hundreds of servers and services on Amazon Web Services",
-        "Designed, built, and shipped iPhone, iPad, Android, and Android TV apps",
+        "Designed, built, and shipped iPhone, iPad, Chromecast, Android, and Android TV apps",
         "Actively managed the interviewing process and built a team",
         "Java, Grails, MariaDB, TokuDB, RabbitMQ, Elasticsearch, Memcached, Tomcat, Redis, Qt4, JavaScript, AWS"
       ]
@@ -110,7 +110,7 @@
       "position": "Trainer",
       "website": "http://www.sweetscienceboxing.org",
       "startDate": "2008-01-01",
-      "endDate": "Current",
+      "endDate": "2012-01-01",
       "summary": "I teach boxing to kids and adults",
       "highlights": [
         "Awarded 'Instructor of the Month'"
@@ -122,8 +122,8 @@
       "institution": "Oregon State University",
       "area": "Computer Science",
       "studyType": "Bachelor",
-      "startDate": "2002",
-      "endDate": "2006",
+      "startDate": "2002-09-01",
+      "endDate": "2006-06-01",
       "gpa": "3.7",
       "courses": [
         "CS420 - Graph Theory",
