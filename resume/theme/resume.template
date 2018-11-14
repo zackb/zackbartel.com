@@ -33,6 +33,9 @@
         </header>
         <div class="col-md-9">
         <p>{{basics.summary}}</p>
+        {{#basics.website}}
+        <strong>Web:</strong> <a href="{{basics.website}}">{{basics.website}}</a><br />
+        {{/basics.website}}
         {{#basics.phone}}
         <strong>Phone:</strong> {{basics.phone}} <br />
         {{/basics.phone}}
@@ -40,12 +43,13 @@
         <strong>Email:</strong> {{basics.email}}<br />
         {{/basics.email}}
         {{#profiles.twitter}}
+        <!--
         <strong>Twitter:</strong> <a href="http://twitter.com/{{.}}">{{.}}</a><br />
         {{/profiles.twitter}}
         {{#profiles.github}}
         <strong>Github:</strong> <a href="http://github.com/{{.}}">{{.}}</a><br />
-
         {{/profiles.github}}
+        -->
         </div>
       </section>
       {{#work.length}}

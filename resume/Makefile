@@ -1,3 +1,4 @@
+# cd theme && npm install
 default:
 	resume serve --theme modern
 

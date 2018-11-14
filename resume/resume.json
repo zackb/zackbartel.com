@@ -5,7 +5,7 @@
     "picture": "",
     "email": "zack@bartel.com",
     "phone": "503.320.1884",
-    "website": "http://zackbartel.com",
+    "website": "https://zackbartel.com",
     "summary": "I'm a full stack developer blended with experience building and shipping iOS, Android, and TV applications. Over the years I have absorbed technologies and systems making me a capable generalist. I love to learn, and will continue to gain as much knowledge as I possibly can. When not behind a computer for work or for fun, I teach boxing, test my culinary skills, and fumble around with a guitar.",
     "location": {
       "address": "Address",
@@ -16,12 +16,12 @@
     },
     "profiles": [
       {
-        "network": "Twitter",
+        "network": "twitter",
         "username": "zackb",
         "url": "https://twitter.com/zackb"
       },
       {
-        "network": "GitHub",
+        "network": "github",
         "username": "zackb",
         "url": "https://github.com/zackb"
       },
@@ -135,15 +135,20 @@
   ],
   "skills": [
     {
-      "name": "Back End",
+      "name": "Tools",
       "level": "Master",
       "keywords": [
-        "Java",
-        "C",
-        "C++",
-        "Grails",
-        "MySql and PostgreSQL",
-        "Redis"
+        "Java", "C", "Go", "Python",
+        "MySQL", "PostgreSQL", "DynamoDB", "Redshift", "Redis"
+      ]
+    },
+    {
+      "name": "Frameworks",
+      "level": "Master",
+      "keywords": [
+        "Swing", "Grails",
+        "Spark", "Storm", "Flink",
+        "Kafka", "Kinesis", "AWS Lambda", "AWS Glue"
       ]
     },
     {
@@ -153,7 +158,7 @@
         "iOS",
         "Android",
         "SWT", "Qt",
-        "JavaScript",
+        "Javascript",
         "HTML5"
       ]
     }
