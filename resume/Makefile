@@ -1,4 +1,5 @@
 # cd theme && npm install
+# npm install -g jsonresume-theme-short
 default:
 	resume serve --theme modern
 
@@ -10,3 +11,6 @@ pdf:
 
 html:
 	resume export resume --format html --theme modern
+
+short:
+	resume export resume --format pdf --theme short
