@@ -38,11 +38,12 @@
       "position": "Principal Software Engineer",
       "website": "https://dlvr.com",
       "startDate": "2014-10-01",
-      "summary": "At DLVR I worked with the largest data system of my career. I built a data collection, processing, and storage platform that analyzed 80,000 events per second and measurably improved video playback for end users. The system measures video Quality of Experience on the server side and actively adjusts network routes and content providers for every user playback session.",
+      "summary": "At DLVR I worked with the largest data system of my career. I built a data collection, enrichment, processing, storage and retrieval platform that analyzes 80,000 events per second and improves video playback for end users. The system measures video Quality of Experience on the server side and actively adjusts network routes and content providers for every user video playback session. Realtime measurements are fed into machine learning algorithms to make decisions tailored to the user.",
       "highlights": [
         "Built video playback infrastructure and Quality of Experience data analysis system",
         "Actively managed the interviewing process and built a team",
-        "Java, Go, Kafka, Storm, Spark, Flink, Druid, Elasticsearch",
+        "DNS, nginx, BGP, Layer 3 through 7 Load Balancing",
+        "Java, Go, Kafka, Storm, Spark, Flink, Druid, Elasticsearch, Redis",
         "AWS: Kinesis, Lambda, DynamoDB, Redshift, Elasticache, API Gateway, Cost Optimization"
       ]
     },
@@ -56,7 +57,7 @@
       "highlights": [
         "Built web video indexing system which scaled to crawl 2000 urls per second, serve 1000 images per second",
         "Managed the DevOps of hundreds of servers and services on Amazon Web Services",
-        "Designed, built, and shipped iPhone, iPad, Chromecast, Android, and Android TV apps",
+        "Designed, built, and shipped video applicaitons for iPhone, iPad, Chromecast, Android, and Android TV",
         "Actively managed the interviewing process and built a team",
         "Java, Grails, MariaDB, TokuDB, RabbitMQ, Elasticsearch, Memcached, Tomcat, Redis, Qt4, JavaScript, AWS"
       ]
