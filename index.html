@@ -607,7 +607,7 @@
                     <br/>
                     To scale such a system a service-oriented approach was adopted to force clear separation of concerns. This allowed the system to use technologies appropriate for a specific problem domain while insulating the rest of the services from those implementation details.
                     <br />
-                    I built a web and feed crawling system using work scheduling and distribution through queueing. Each Grails worker process is able to operate and scale independently. This data is then inteligently categorized using NLP, Freebase, and some proprietary algorithms and stored in SQL databases that are horizontally sharded.
+                    I built a web and feed crawling system using work scheduling and distribution through queuing. Each Grails worker process is able to operate and scale independently. This data is then inteligently categorized using NLP, Freebase, and some proprietary algorithms and stored in SQL databases that are horizontally sharded.
                     <br />
                     The data is delivered to end users via a REST JSON API which is also independently scalable horizontally. Images are ingested and delivered using a custom image processing system. The image server workers are able to scale, resize, color correct, and cache images on demand. Redundancy is achieved by a two level filesystem failover to S3.
                     <br />
