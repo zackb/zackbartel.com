@@ -1,0 +1,52 @@
+diff --git a/s/css/main.css b/s/css/main.css
+index b3dbb84..aa560d6 100644
+--- a/s/css/main.css
++++ b/s/css/main.css
+@@ -164,7 +164,9 @@ a:after {
+ 
+ 
+ .header-title {
+-	padding-bottom: 0.5%;
++	padding-bottom: 5%;
++	padding-top: 5%;
++    min-height: 300px;
+ }
+ 
+ /* Skills section components */
+@@ -191,8 +193,8 @@ a:after {
+ 	}
+ 
+ 	.skillsgroup {
+-	border: none;
+-	color: red;
++        border: none;
++        color: red;
+ 	}
+ }
+ 
+@@ -210,11 +212,11 @@ a:after {
+ #headerwrap {
+ 	background: url(../img/header-bg.jpg) no-repeat center top;
+ 	margin-top: 60px;
+-	padding-top:140px;
++	/* padding-top:140px; */
+ 	text-align:center;
+ 	background-attachment: relative;
+ 	background-position: center center;
+-	min-height: 500px;
++	/* min-height: 200px; */
+ 	width: 100%;
+ 	
+     -webkit-background-size: 100%;
+@@ -228,6 +230,11 @@ a:after {
+     background-size: cover;
+ }
+ 
++#headerwrap .container {
++    width: 100%;
++}
++
++
+ #headerwrap h1 {
+ 	font-size: 80px;
+ 	color: white;
