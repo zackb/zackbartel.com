@@ -2,6 +2,12 @@
  * Based on and extended from work by Carlos Alvarez (http://alvarez.is)
  */
 
+/*
+html {
+  scroll-behavior: smooth;
+}
+*/
+
 body {
   background-color: #f2f2f2;
     font-family: "Lato";

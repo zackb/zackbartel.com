@@ -38,7 +38,7 @@
       "position": "Principal Software Engineer",
       "website": "https://dlvr.com",
       "startDate": "2014-10-01",
-      "summary": "At DLVR I worked with the largest data system of my career. I built a data collection, enrichment, processing, storage and retrieval platform that analyzes 80,000 events per second and improves video playback for end users. The system measures video Quality of Experience on the server side and actively adjusts network routes and content providers for every user video playback session. Realtime measurements are fed into machine learning algorithms to make decisions tailored to the user.",
+      "summary": "At DLVR I worked with the largest data system of my career. I built a data collection, enrichment, processing, storage and retrieval platform that analyzes hundreds of thousands of events per second and improves video playback for end users. The system measures video Quality of Experience on the server side and actively adjusts network routes and content providers for every user video playback session. Realtime measurements are fed into machine learning algorithms to make decisions tailored to the user.",
       "highlights": [
         "Built video playback infrastructure and Quality of Experience data analysis system",
         "Actively managed the interviewing process and built a team",
