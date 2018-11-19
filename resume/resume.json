@@ -4,8 +4,8 @@
     "label": "Programmer",
     "picture": "",
     "email": "zack@bartel.com",
+    "website": "zackbartel.com",
     "phone": "503.320.1884",
-    "website": "https://zackbartel.com",
     "summary": "I'm a full stack developer focused on Big Data and blended with experience building and shipping iOS, Android, and TV applications. Over the years I have absorbed technologies and systems making me a capable generalist. I love to learn, and will continue to gain as much knowledge as I possibly can. When not behind a computer for work or for fun, I teach boxing, test my culinary skills, and fumble around with a guitar.",
     "location": {
       "address": "Address",
@@ -15,11 +15,6 @@
       "region": "Oregon"
     },
     "profiles": [
-      {
-        "network": "twitter",
-        "username": "zackb",
-        "url": "https://twitter.com/zackb"
-      },
       {
         "network": "github",
         "username": "zackb",
@@ -38,7 +33,7 @@
       "position": "Principal Software Engineer",
       "website": "https://dlvr.com",
       "startDate": "2014-10-01",
-      "summary": "At DLVR I worked with the largest data system of my career. I built a data collection, enrichment, processing, storage and retrieval platform that analyzes hundreds of thousands of events per second and improves video playback for end users. The system measures video Quality of Experience on the server side and actively adjusts network routes and content providers for every user video playback session. Realtime measurements are fed into machine learning algorithms to make decisions tailored to the user.",
+      "summary": "At DLVR I worked with the largest data system of my career. I built a data collection, enrichment, processing, storage and retrieval platform that analyzes hundreds of thousands of events per second and improves video playback for end users. The system measures video Quality of Experience on the server side and actively adjusts network routes and content providers for every user video playback session. Realtime measurements are fed into machine learning algorithms to make decisions tailored to the individual user.",
       "highlights": [
         "Built video playback infrastructure and Quality of Experience data analysis system",
         "Actively managed the interviewing process and built a team",
@@ -55,7 +50,8 @@
       "endDate": "2014-10-01",
       "summary": "During my time at Frequency I had opportunities to work on an exceptional variety of development projects across domains. This ranged from designing and implementing large scale multi-tier applications to building and shipping consumer applications. Internally, I championed new technologies and methodologies, as well as led small teams and mentored developers.",
       "highlights": [
-        "Built web video indexing system which scaled to crawl 2000 urls per second, serve 1000 images per second",
+        "Built web video indexing system which scaled to crawl 2000 urls per second, serve thousands images per second",
+        "Built video transcoding system with redundant delivery and storage layers",
         "Managed the DevOps of hundreds of servers and services on Amazon Web Services",
         "Designed, built, and shipped video applicaitons for iPhone, iPad, Chromecast, Android, and Android TV",
         "Actively managed the interviewing process and built a team",
@@ -118,19 +114,6 @@
       ]
     }
   ],
-  "volunteer": [
-    {
-      "organization": "Sweet Science Boxing",
-      "position": "Trainer",
-      "website": "http://www.sweetscienceboxing.org",
-      "startDate": "2008-01-01",
-      "endDate": "2012-01-01",
-      "summary": "I teach boxing to kids and adults",
-      "highlights": [
-        "Awarded 'Instructor of the Month'"
-      ]
-    }
-  ],
   "education": [
     {
       "institution": "Oregon State University",
@@ -169,26 +152,12 @@
       "name": "Front End",
       "level": "Master",
       "keywords": [
+        "REST",
         "iOS",
         "Android",
         "SWT", "Qt",
         "Javascript",
         "HTML5"
-      ]
-    }
-  ],
-  "languages": [
-    {
-      "language": "English",
-      "fluency": "Native speaker"
-    }
-  ],
-  "interests": [
-    {
-      "name": "Boxing",
-      "keywords": [
-        "Instruction",
-        "Competition"
       ]
     }
   ],
