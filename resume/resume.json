@@ -37,7 +37,7 @@
       "highlights": [
         "Built video playback infrastructure and Quality of Experience data analysis system",
         "Actively managed the interviewing process and built a team",
-        "DNS, nginx, BGP, Layer 3 through 7 Load Balancing",
+        "DNS, nginx, BGP, Layer 3 and 7 Load Balancing",
         "Java, Go, Kafka, Storm, Spark, Flink, Druid, Elasticsearch, Redis",
         "AWS: Kinesis, Lambda, DynamoDB, Redshift, Elasticache, API Gateway, Cost Optimization"
       ]
