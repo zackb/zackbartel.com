@@ -29,10 +29,23 @@
   },
   "work": [
     {
+      "company": "Proofpoint",
+      "position": "Staff Software Engineer",
+      "website": "https://proofpoint.com",
+      "startDate": "2019-05-20",
+      "summary": "",
+      "highlights": [
+        "Lead geo-distributed teams to build security software used by hundreds of thousands of people",
+        "Used terraform to manage dozens of Kubernetes clusters worldwide on GCP and AWS",
+        "Designed and built APIs and microservices in Go and Java/Spring"
+      ]
+    },
+    {
       "company": "DLVR",
       "position": "Principal Software Engineer",
       "website": "https://dlvr.com",
       "startDate": "2014-10-01",
+      "endDate": "2019-05-10",
       "summary": "At DLVR I worked with the largest data system of my career. I built a data collection, enrichment, processing, storage and retrieval platform that analyzes hundreds of thousands of events per second and improves video playback for end users. The system measures video Quality of Experience on the server side and actively adjusts network routes and content providers for every user video playback session. Realtime measurements are fed into machine learning algorithms to make decisions tailored to the individual user.",
       "highlights": [
         "Built video playback infrastructure and Quality of Experience data analysis system",
@@ -135,17 +148,17 @@
       "name": "Tools",
       "level": "Master",
       "keywords": [
-        "Java", "C", "Go", "Python",
-        "MySQL", "PostgreSQL", "DynamoDB", "Redshift", "Redis"
+        "Java", "C", "Go", "Python", "Swift",
+        "Terraform", "MySQL", "PostgreSQL", "DynamoDB", "Redshift", "Redis"
       ]
     },
     {
       "name": "Frameworks",
       "level": "Master",
       "keywords": [
-        "Swing", "Grails",
-        "Spark", "Storm", "Flink",
-        "Kafka", "Kinesis", "AWS Lambda", "AWS Glue"
+        "Kubernetes", "Spring", "Grails",
+        "Spark", "Flink", "Kafka", 
+        "Kinesis", "AWS Lambda"
       ]
     },
     {
@@ -155,7 +168,7 @@
         "REST",
         "iOS",
         "Android",
-        "SWT", "Qt",
+        "SWT", "Swing", "Qt",
         "Javascript",
         "HTML5"
       ]

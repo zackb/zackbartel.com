@@ -1,5 +1,7 @@
+# npm install -g resume-cli
 # cd theme && npm install
 # npm install -g jsonresume-theme-short
+# make short
 default:
 	resume serve --theme modern
 
