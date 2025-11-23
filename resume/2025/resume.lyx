@@ -1,0 +1,732 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+
+
+\usepackage{titlesec}
+
+
+% Remove page numbers
+
+
+% Reduce spacing
+
+\setlength{\parskip}{0pt}
+
+% Section formatting
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{12pt}{6pt}
+
+\titleformat{\subsection}{\bfseries}{}{0em}{}
+\titlespacing*{\subsection}{0pt}{8pt}{2pt}
+
+% Hyperlink setup
+\end_preamble
+\use_default_options false
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children no
+\language english
+\language_package none
+\inputencoding utf8
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 10
+\spacing single
+\use_hyperref true
+\pdf_bookmarks false
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref section
+\pdf_pdfusetitle false
+\pdf_quoted_options "linkcolor=black,urlcolor=black"
+\papersize letter
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation 0pt
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle empty
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Header
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\series bold
+\size largest
+Zack Bartel
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 4pt
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+target "zack@bartel.com"
+type "mailto:"
+literal "false"
+
+\end_inset
+
+⏺ 503.320.1884 ⏺ 
+\begin_inset CommandInset href
+LatexCommand href
+name "zackbartel.com"
+target " https://zackbartel.com"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+target "github.com/zackb"
+literal "false"
+
+\end_inset
+
+⏺ 
+\begin_inset CommandInset href
+LatexCommand href
+name "linkedin.com/in/zackbartel"
+target " https://linkedin.com/in/zackbartel"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 6pt
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Systems developer building C/C++/Go/Java software on Linux.
+ Career spent on distributed systems,
+ data infrastructure,
+ mobile,
+ and full-stack development.
+\end_layout
+
+\begin_layout Section*
+Skills
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Systems & Tools:
+
+\series default
+ C/C++ ⏺ Go ⏺ Java ⏺ Python ⏺ Terraform ⏺ PostgreSQL ⏺ MySQL ⏺ Redis
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Infrastructure:
+
+\series default
+ Kubernetes ⏺ AWS ⏺ GCP ⏺ Kafka ⏺ Spark ⏺ Flink ⏺ Kinesis
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+APIs & Web:
+
+\series default
+ REST ⏺ Spring ⏺ Scala ⏺ iOS ⏺ Android
+\end_layout
+
+\begin_layout Section*
+Experience
+\end_layout
+
+\begin_layout Subsection*
+Proofpoint 
+\begin_inset space \hfill{}
+\end_inset
+
+Staff Software Engineer 
+\begin_inset space \hfill{}
+\end_inset
+
+May 2019 – Present
+\end_layout
+
+\begin_layout Standard
+Designed and implemented large distributed data systems.
+ Built security software in different fields including Remote Browser Isolation,
+ CASB,
+ DSPM.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+leftmargin=*,
+ itemsep=2pt,
+ parsep=0pt
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Lead geo-distributed teams building security software used by millions of users 
+\end_layout
+
+\begin_layout Itemize
+Manage dozens of Kubernetes clusters worldwide on GCP,
+ AWS,
+ and Baremetal 
+\end_layout
+
+\begin_layout Itemize
+Design and build microservices and APIs in Go and Java/Spring
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Stack:
+
+\series default
+ Go,
+ Java,
+ Scala,
+ Typescript,
+ Kubernetes,
+ Terraform
+\end_layout
+
+\begin_layout Subsection*
+DLVR 
+\begin_inset space \hfill{}
+\end_inset
+
+Principal Software Engineer 
+\begin_inset space \hfill{}
+\end_inset
+
+Sep 2014 – May 2019
+\end_layout
+
+\begin_layout Standard
+Built data collection,
+ enrichment,
+ and processing platform analyzing hundreds of thousands of events per second to optimize video Quality of Experience.
+ System actively adjusts network routes and CDN selection per user session using realtime metrics fed to ML algorithms.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+leftmargin=*,
+ itemsep=2pt,
+ parsep=0pt
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Built video playback infrastructure and QoE data analysis system 
+\end_layout
+
+\begin_layout Itemize
+Managed hiring and built engineering team 
+\end_layout
+
+\begin_layout Itemize
+DNS,
+ nginx,
+ BGP,
+ Layer 3/7 load balancing 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Stack:
+
+\series default
+ Java,
+ Go,
+ Kafka,
+ Storm,
+ Spark,
+ Flink,
+ Druid,
+ Elasticsearch,
+ Redis 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+AWS:
+
+\series default
+ Kinesis,
+ Lambda,
+ DynamoDB,
+ Redshift,
+ Elasticache,
+ API Gateway 
+\end_layout
+
+\begin_layout Subsection*
+Frequency 
+\begin_inset space \hfill{}
+\end_inset
+
+Senior Software Engineer 
+\begin_inset space \hfill{}
+\end_inset
+
+Dec 2009 – Sep 2014
+\end_layout
+
+\begin_layout Standard
+Built large-scale video indexing and delivery infrastructure.
+ Led small teams and championed adoption of new technologies and development practices.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+leftmargin=*,
+ itemsep=2pt,
+ parsep=0pt
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Web video indexing system:
+ 2000 URLs/sec crawl rate,
+ thousands of images/sec served 
+\end_layout
+
+\begin_layout Itemize
+Video transcoding with redundant delivery and storage layers 
+\end_layout
+
+\begin_layout Itemize
+DevOps for hundreds of servers and services on AWS 
+\end_layout
+
+\begin_layout Itemize
+Built and shipped video apps for iPhone,
+ iPad,
+ Chromecast,
+ Android,
+ Android TV 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Stack:
+
+\series default
+ Java,
+ Grails,
+ MariaDB,
+ TokuDB,
+ RabbitMQ,
+ Elasticsearch,
+ Memcached,
+ Redis,
+ C++/Qt4 
+\end_layout
+
+\begin_layout Subsection*
+GetBack Media 
+\begin_inset space \hfill{}
+\end_inset
+
+Senior Software Engineer 
+\begin_inset space \hfill{}
+\end_inset
+
+Mar 2008 – Dec 2009
+\end_layout
+
+\begin_layout Standard
+Designed and implemented frontend/backend systems for retro social media platform handling 1M page views/day.
+ Built video and image delivery pipeline with cloud infrastructure.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+leftmargin=*,
+ itemsep=2pt,
+ parsep=0pt
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Ingested and normalized data from dozens of sources 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Stack:
+
+\series default
+ Java,
+ PHP,
+ Nginx,
+ Solr,
+ AWS 
+\end_layout
+
+\begin_layout Subsection*
+Tectura 
+\begin_inset space \hfill{}
+\end_inset
+
+Software Engineer 
+\begin_inset space \hfill{}
+\end_inset
+
+May 2006 – Mar 2008
+\end_layout
+
+\begin_layout Standard
+Aerospace industry consulting.
+ Built flight test software and flight data analysis tools for major aircraft manufacturer.
+ Contributed to Linux kernel to solve client requirements.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+leftmargin=*,
+ itemsep=2pt,
+ parsep=0pt
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Cross-platform development for Linux Intel and PowerPC in C/C++ 
+\end_layout
+
+\begin_layout Itemize
+Flight data (ACARS) analysis applications 
+\end_layout
+
+\begin_layout Itemize
+Custom GNU/Linux distribution development 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Stack:
+
+\series default
+ C,
+ Java,
+ PostgreSQL,
+ Oracle 10G,
+ SWT,
+ Linux 
+\end_layout
+
+\begin_layout Subsection*
+OSU Open Source Lab 
+\begin_inset space \hfill{}
+\end_inset
+
+Software Developer 
+\begin_inset space \hfill{}
+\end_inset
+
+Sep 2005 – Aug 2006
+\end_layout
+
+\begin_layout Standard
+Built open source network management tools for university network and hosting infrastructure for major open source projects.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+leftmargin=*,
+ itemsep=2pt,
+ parsep=0pt
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\series bold
+Stack:
+
+\series default
+ Java,
+ PHP,
+ MySQL,
+ DNS,
+ DHCP,
+ Linux 
+\end_layout
+
+\begin_layout Subsection*
+Business Solutions Group 
+\begin_inset space \hfill{}
+\end_inset
+
+Student Software Developer 
+\begin_inset space \hfill{}
+\end_inset
+
+Jun 2004 – Oct 2005
+\end_layout
+
+\begin_layout Standard
+Contract management software for university departments.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+leftmargin=*,
+ itemsep=2pt,
+ parsep=0pt
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\series bold
+Stack:
+
+\series default
+ C#,
+ ASP.NET,
+ IIS,
+ SQL Server 
+\end_layout
+
+\begin_layout Section*
+Education
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Oregon State University
+\series default
+ 
+\begin_inset space \hfill{}
+\end_inset
+
+Bachelor of Science,
+ Computer Science 
+\begin_inset space \hfill{}
+\end_inset
+
+GPA:
+ 3.7 
+\begin_inset space \hfill{}
+\end_inset
+
+2002–2006
+\end_layout
+
+\begin_layout Section*
+Other
+\end_layout
+
+\begin_layout Standard
+When not coding:
+ teaching boxing,
+ cooking,
+ playing chess.
+\end_layout
+
+\end_body
+\end_document
