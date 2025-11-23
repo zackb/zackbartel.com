@@ -1,0 +1,132 @@
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[margin=0.75in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+
+% Remove page numbers
+\pagestyle{empty}
+
+% Reduce spacing
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% Section formatting
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{12pt}{6pt}
+
+\titleformat{\subsection}{\bfseries}{}{0em}{}
+\titlespacing*{\subsection}{0pt}{8pt}{2pt}
+
+% Hyperlink setup
+\hypersetup{
+colorlinks=true,
+linkcolor=black,
+urlcolor=black,
+pdfborder={0 0 0}
+}
+
+\begin{document}
+
+% Header
+{\LARGE\textbf{Zack Bartel}}
+
+\vspace{4pt}
+
+\href{mailto:zack@bartel.com}{zack@bartel.com} ∙∙ 503.320.1884 ∙∙ \href{ https://zackbartel.com}{zackbartel.com}
+
+\href{https://github.com/zackb}{github.com/zackb} ∙∙ \href{ https://linkedin.com/in/zackbartel}{linkedin.com/in/zackbartel}
+
+\vspace{6pt}
+
+Systems developer building C/C++/Go software on Linux. Career spent on distributed systems, data infrastructure, and full-stack development.
+
+\section*{Skills}
+
+\textbf{Systems \& Tools:} C/C++ ∙∙ Go ∙∙ Linux ∙∙ Neovim ∙∙ Python ∙∙ Java ∙∙ Terraform ∙∙ PostgreSQL ∙∙ MySQL ∙∙ Redis
+
+\textbf{Infrastructure:} Kubernetes ∙∙ AWS ∙∙ GCP ∙∙ Kafka ∙∙ Spark ∙∙ Flink ∙∙ Kinesis ∙∙ Lambda
+
+\textbf{APIs \& Web:} REST ∙∙ Spring ∙∙ Grails ∙∙ iOS ∙∙ Android
+
+\section*{Experience}
+
+\subsection*{Proofpoint \hfill Staff Software Engineer \hfill May 2019 -- Present}
+
+\begin{itemize}[leftmargin=*, itemsep=2pt, parsep=0pt]
+\item Lead geo-distributed teams building security software used by hundreds of thousands of users
+\item Manage dozens of Kubernetes clusters worldwide on GCP and AWS using Terraform
+\item Design and build microservices and APIs in Go and Java/Spring
+\end{itemize}
+
+\subsection*{DLVR \hfill Principal Software Engineer \hfill Sep 2014 -- May 2019}
+
+Built data collection, enrichment, and processing platform analyzing hundreds of thousands of events per second to optimize video Quality of Experience. System actively adjusts network routes and CDN selection per user session using realtime metrics fed to ML algorithms.
+
+\begin{itemize}[leftmargin=*, itemsep=2pt, parsep=0pt]
+\item Built video playback infrastructure and QoE data analysis system
+\item Managed hiring and built engineering team
+\item DNS, nginx, BGP, Layer 3/7 load balancing
+\item \textbf{Stack:} Java, Go, Kafka, Storm, Spark, Flink, Druid, Elasticsearch, Redis
+\item \textbf{AWS:} Kinesis, Lambda, DynamoDB, Redshift, Elasticache, API Gateway
+\end{itemize}
+
+\subsection*{Frequency \hfill Principal Software Engineer \hfill Dec 2009 -- Sep 2014}
+
+Built large-scale video indexing and delivery infrastructure. Led small teams and championed adoption of new technologies and development practices.
+
+\begin{itemize}[leftmargin=*, itemsep=2pt, parsep=0pt]
+\item Web video indexing system: 2000 URLs/sec crawl rate, thousands of images/sec served
+\item Video transcoding with redundant delivery and storage layers
+\item DevOps for hundreds of servers and services on AWS
+\item Shipped video apps for iPhone, iPad, Chromecast, Android, Android TV
+\item \textbf{Stack:} Java, Grails, MariaDB, TokuDB, RabbitMQ, Elasticsearch, Memcached, Redis, Qt4
+\end{itemize}
+
+\subsection*{GetBack Media \hfill Senior Software Engineer \hfill Mar 2008 -- Dec 2009}
+
+Designed and implemented frontend/backend systems for retro social media platform handling 1M page views/day. Built video and image delivery pipeline with cloud infrastructure.
+
+\begin{itemize}[leftmargin=*, itemsep=2pt, parsep=0pt]
+\item Ingested and normalized data from dozens of sources
+\item \textbf{Stack:} Java, PHP, Nginx, Solr, AWS
+\end{itemize}
+
+\subsection*{Tectura \hfill Software Engineer \hfill May 2006 -- Mar 2008}
+
+Aerospace industry consulting. Built flight test software and flight data analysis tools for major aircraft manufacturer. Contributed to Linux kernel to solve client requirements.
+
+\begin{itemize}[leftmargin=*, itemsep=2pt, parsep=0pt]
+\item Cross-platform development for Linux Intel and PowerPC in C/C++
+\item Flight data (ACARS) analysis applications
+\item Custom GNU/Linux distribution development
+\item \textbf{Stack:} C, Java, PostgreSQL, Oracle 10G, SWT, Linux
+\end{itemize}
+
+\subsection*{OSU Open Source Lab \hfill Software Developer \hfill Sep 2005 -- Aug 2006}
+
+Built open source network management tools for university network and hosting infrastructure for major open source projects.
+
+\begin{itemize}[leftmargin=*, itemsep=2pt, parsep=0pt]
+\item \textbf{Stack:} Java, PHP, MySQL, DNS, DHCP, Linux
+\end{itemize}
+
+\subsection*{Business Solutions Group \hfill Student Software Developer \hfill Jun 2004 -- Oct 2005}
+
+Contract management software for university departments.
+
+\begin{itemize}[leftmargin=*, itemsep=2pt, parsep=0pt]
+\item \textbf{Stack:} C#, ASP.NET, IIS, SQL Server
+\end{itemize}
+
+\section*{Education}
+
+\textbf{Oregon State University} \hfill Bachelor of Science, Computer Science \hfill GPA: 3.7 \hfill 2002--2006
+
+\section*{Other}
+
+When not coding: teaching boxing, cooking, playing guitar.
+
+\end{document}
+
