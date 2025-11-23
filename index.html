@@ -1,701 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
+
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The personal website of Zack Bartel">
-    <meta name="author" content="Zack Bartel">
-    <link rel="shortcut icon" href="s/img/favicon.png">
-
     <title>Zack Bartel</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link href="s/css/main.css" rel="stylesheet">
-    <link rel="stylesheet" href="s/css/font-awesome.min.css">
-    <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
-    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,700" rel="stylesheet" type="text/css">
-    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="s/js/scroll.js"></script> 
-    <script src="s/js/Chart.js"></script>
+        body {
+            font-family: 'Courier New', monospace;
+            background: #1a1a1a;
+            color: #e0e0e0;
+            line-height: 1.6;
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
 
-    <!--[if lt IE 9]>
-      <script src="s/js/html5shiv.js"></script>
-      <script src="s/js/respond.min.js"></script>
-    <![endif]-->
-    <!-- Google Analytics -->
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        ga('create', 'UA-462823-1', 'auto');
-        ga('send', 'pageview');
-    </script>
-    <!-- End Google Analytics -->
-  </head>
+        .prompt {
+            color: #50fa7b;
+            margin-bottom: 1rem;
+        }
 
-  <body data-spy="scroll" data-offset="0" data-target="#nav">
+        .prompt::before {
+            content: '$ ';
+        }
 
-    <div id="section-topbar">
-        <div id="topbar-inner">
-            <div class="container">
-                <div class="row">
-                    <div class="dropdown">
-                        <ul id="nav" class="nav">
-                            <li class="menu-item"><a href="#about" title="About"><i class="icon-user"></i></a></li>
-                            <li class="menu-item"><a href="#resume" title="Resume"><i class="icon-file"></i></a></li>
-                            <li class="menu-item"><a href="#work" title="Works"><i class="icon-briefcase"></i></a></li>
-                            <li class="menu-item"><a href="#contact" title="Contact"><i class="icon-envelope"></i></a></li>
-                            <li class="menu-item"><a href="//github.com/zackb?tab=repositories" title="Code"><i class="icon-github"></i></a></li>
-                            <li class="menu-item"><a href="https://apps.apple.com/us/developer/zack-bartel/id1069647834" title="Apps"><i class="icon-apple"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="clear"></div>
-                </div>
+        h1 {
+            font-size: 1.5rem;
+            font-weight: normal;
+            margin-bottom: 0.5rem;
+            color: #8be9fd;
+        }
+
+        .bio {
+            margin-bottom: 2rem;
+            color: #f8f8f2;
+            opacity: 0.9;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .section-title {
+            color: #ff79c6;
+            font-weight: bold;
+            margin-bottom: 0.75rem;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .link-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .link-label {
+            min-width: 100px;
+            color: #bd93f9;
+        }
+
+        a {
+            color: #8be9fd;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+
+        a:hover {
+            border-bottom-color: #8be9fd;
+        }
+
+        .tech-list {
+            color: #f8f8f2;
+            opacity: 0.8;
+        }
+
+        .blink {
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+
+            0%,
+            50% {
+                opacity: 1;
+            }
+
+            51%,
+            100% {
+                opacity: 0;
+            }
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 1rem;
+            }
+
+            .link-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.25rem;
+            }
+
+            .link-label {
+                min-width: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="prompt">whoami</div>
+    <h1>Zack Bartel</h1>
+    <p class="bio">
+        Systems developer. Building with C/C++/Go on Linux. Career spent on big data, web services, and infrastructure.
+    </p>
+
+    <div class="section">
+        <div class="section-title">// links</div>
+        <div class="links">
+            <div class="link-item">
+                <span class="link-label">github:</span>
+                <a href="https://github.com/zackb" target="_blank">github.com/zackb</a>
             </div>
-
-            <div class="clear"></div>
-        </div>
-    </div>
-
-    <div id="headerwrap">
-        <div class="container">
-            <div class="row centered">
-                <div class="col-lg-12 contrast-dark header-title">
-                    <h1>Zack Bartel</h1>
-                    <h3>Full Stack Engineer</h3>
-                </div>
+            <div class="link-item">
+                <span class="link-label">app store:</span>
+                <a href="https://apps.apple.com/us/developer/zack-bartel/id1069647834"
+                    target="_blank">apps.apple.com/us/developer/zack-bartel/id1069647834</a>
             </div>
-        </div>
-    </div>
-
-    <section id="about" name="about"></section>
-    <div id="intro">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-2 col-lg-offset-1">
-                    <h5>ABOUT</h5>
-                </div>
-                <div class="col-lg-6">
-                    <p>I'm a full stack developer focused on Big Data and blended with experience building and shipping iOS, Android, and TV applications.</p>
-                    <p>Over the years I have absorbed technologies and systems making me a capable generalist. I love to learn, and will continue to gain as much knowledge as I possibly can.
-                    <br /><br />
-                    When not behind a computer for work or for fun, I teach boxing to kids and adults, test my culinary skills, and fumble around with a guitar.</p>
-                </div>
-                <div class="col-lg-3">
-                    <p><a href="/resume/resume.pdf"><i class="icon-file"></i></a> <sm>DOWNLOAD PDF</sm></p>
-                </div>
+            <div class="link-item">
+                <span class="link-label">email:</span>
+                <a href="mailto:zack@bartel.com">zack@bartel.com</a>
             </div>
-        </div>
-    </div>
-
-    <section id="resume" name="resume"></section>
-    <!-- education -->
-    <div class="container desc">
-        <div class="row">
-            <div class="col-lg-2 col-lg-offset-1">
-                <h5>EDUCATION</h5>
-            </div>
-            <div class="col-lg-6">
-                <p><t>Computer Science</t> <em> and Business Administration</em><br/>
-                    Oregon State University<br/>
-                </p>
-                <p><more>General computer science education including two years in industry applying knowledge.</more></p>
-            </div>
-            <div class="col-lg-3">
-                <p><sm>2006</sm><br/></p>
-            </div>
-        </div>
-        <br>
-        <hr>
-    </div>
-
-
-    <!-- work -->
-    <div class="container desc">
-        <div class="row">
-
-                <div class="col-lg-2 col-lg-offset-1">
-                    <h5>WORK</h5>
-                </div>
-                <div class="col-lg-6">
-                    <p class="short-separation"><t>Principal Software Engineer</t><br/>
-                        DLVR<br/>
-                    </p>
-                    <p><more>At DLVR I again wrote the first lines of code in the company. Building something very special from scratch was a tremendously rewarding experience. I focused on the collection, enrichment, processing, storage and retrieval of a data stream of hundreds of thousands of events per second.
-                    <br/>
-                    Over the course of time the data system migrated from different places, baremetal to clouds, homemade software to managed and serverless, and on to traditional open source technologies. 
-                    <br />
-                    Building a team and a business, developing best practices and selecting software solutions from scratch was incredibly fulfilling.</more></p>
-                </div>
-                <div class="col-lg-3">
-                    <p><sm>2015 - PRESENT<br />Phoenix, AZ</sm></p>
-                </div>
-
-                <div class="col-lg-6 col-lg-offset-3">
-                    <p class="short-separation"><t>Principal Software Engineer</t><br/>
-                        Frequency<br/>
-                    </p>
-                    <p><more>During my time at Frequency I had opportunities to work on an exceptional variety of development projects across domains. This has ranged from designing and implementing large scale multi-tier applications to building and shipping consumer applications.
-                    <br />
-                    Internally, I championed new technologies and methodologies, as well as led small teams and mentored developers.</more></p>
-                </div>
-                <div class="col-lg-3">
-                    <p><sm>2010 - 2015<br />Los Angeles, CA</sm></p>
-                </div>
-
-                <div class="col-lg-6 col-lg-offset-3">
-                    <p class="short-separation"><t>Senior Software Engineer</t><br/>
-                        GetBack Media<br/>
-                    </p>
-                    <p><more>
-                    My efforts at GetBack focused on building a retro social media community and business. This included designing and implementing frontend and backend software systems and scaling to handle 1 million page views per day.
-                    <br />
-                    The web application let you "turn back the clock" to any year and interact with the songs, movies, tv shows, games, actors, and news headlines of the time.
-                    <br />
-                    As part of my role, I built a video and image delivery pipeline as well as cloud infrastructure to power it.
-                    </more></p>
-                </div>
-                <div class="col-lg-3">
-                    <p><sm>2008 - 2010<br />Santa Monica, CA</sm></p>
-                </div>
-
-                <div class="col-lg-6 col-lg-offset-3">
-                    <p class="short-separation"><t>Software Engineer</t><br/>
-                        Tectura<br/>
-                    </p>
-                    <p><more>
-                    At Tectura I had the opportunity to work in the aerospace industry consulting on a number of projects for an airplane manufacturer. I built flight test software and flight data analysis tools. Contributing code to the Linux kernel to solve a problem without hacky workarounds was one of the proudest moments of my career.
-                    <br />
-                    Within the broader team, I participated in designing, prototyping and refining internal development tools and processes.</more></p>
-                </div>
-                <div class="col-lg-3">
-                    <p><sm>2006 - 2008<br />Seattle, WA</sm></p>
-                </div>
-
-                <div class="col-lg-6 col-lg-offset-3">
-                    <p class="short-separation"><t>Software Developer</t><br/>
-                        OSU Open Source Lab<br/>
-                    </p>
-                    <p><more>
-                        The time I spent at the Open Source Lab was the most valuable of my college years. 
-                        I worked with and was mentored by some of the most talented people I have ever met. 
-                        We built open source tools to manage the entire university network as well as hosting tools and infrastructure that is home to the largest open source software projects in the world. 
-                        Learning how to work with the open source community was a transformative experience.
-                    </more></p>
-                </div>
-                <div class="col-lg-3">
-                    <p><sm>2005 - 2006<br />Oregon State University</sm></p>
-                </div>
-
-                <div class="col-lg-6 col-lg-offset-3">
-                    <p class="short-separation"><t>Student Software Developer</t><br/>
-                        Business Solutions Group<br/>
-                    </p>
-                    <p><more>
-                        My first job in the software industry taught me the skills to translate customer needs into engineering requirements. 
-                        Learning how to solve real world problems using software was a wonderful learning experience.
-                    </more></p>
-                </div>
-                <div class="col-lg-3">
-                    <p><sm>2004 - 2005<br />Oregon State University</sm></p>
-                </div>
-        </div>
-        <br>
-    </div>
-
-
-    <!-- skills -->
-    <div id="skillswrap">
-        <div class="container">
-            <div class="row">
-                    <div class="col-lg-1 col-lg-offset-1">
-                        <h5>SKILLS</h5>
-                    </div>
-
-                    <!-- backend -->
-                    <div class="col-lg-3 centered skillsgroup">
-                    <div class="col-lg-12 skillsgroup-title">Backend</div>
-                        <div class="col-lg-6" style="float:left;">
-                        <canvas id="Java" height="60" width="60"></canvas>
-                        <p>Java</p>
-                        <br>
-                        <script>
-                            var doughnutData = [
-                                    {
-                                        value: 25,
-                                        color:"#1abc9c"
-                                    },
-                                    {
-                                        value : 75,
-                                        color : "#ecf0f1"
-                                    }
-                                ];
-                                var myDoughnut = new Chart(document.getElementById("Java").getContext("2d")).Doughnut(doughnutData);
-                        </script>
-                        </div>
-
-                        <div class="col-lg-6" style="float:left;">
-                        <canvas id="C" height="60" width="60"></canvas>
-                        <p>C</p>
-                        <br>
-                        <script>
-                            var doughnutData = [
-                                    {
-                                        value: 60,
-                                        color:"#1abc9c"
-                                    },
-                                    {
-                                        value : 40,
-                                        color : "#ecf0f1"
-                                    }
-                                ];
-                                var myDoughnut = new Chart(document.getElementById("C").getContext("2d")).Doughnut(doughnutData);
-                        </script>
-                        </div>
-
-                        <div class="col-lg-6" style="float:left;">
-                        <canvas id="Go" height="60" width="60"></canvas>
-                        <p>Go</p>
-                        <br>
-                        <script>
-                            var doughnutData = [
-                                    {
-                                        value: 60,
-                                        color:"#1abc9c"
-                                    },
-                                    {
-                                        value : 40,
-                                        color : "#ecf0f1"
-                                    }
-                                ];
-                                var myDoughnut = new Chart(document.getElementById("Go").getContext("2d")).Doughnut(doughnutData);
-                        </script>
-                        </div>
-
-                        <div class="col-lg-6" style="float:left;">
-                        <canvas id="Python" height="60" width="60"></canvas>
-                        <p>Python</p>
-                        <br>
-                        <script>
-                            var doughnutData = [
-                                    {
-                                        value: 70,
-                                        color:"#1abc9c"
-                                    },
-                                    {
-                                        value : 30,
-                                        color : "#ecf0f1"
-                                    }
-                                ];
-                                var myDoughnut = new Chart(document.getElementById("Python").getContext("2d")).Doughnut(doughnutData);
-                        </script>
-                        </div>
-
-                        <div class="col-lg-6" style="float:left;">
-                            <canvas id="Serverless" height="60" width="60"></canvas>
-                            <p>Serverless</p>
-                            <br>
-                            <script>
-                                var doughnutData = [
-                                        {
-                                            value: 50,
-                                            color:"#1abc9c"
-                                        },
-                                        {
-                                            value : 50,
-                                            color : "#ecf0f1"
-                                        }
-                                    ];
-                                    var myDoughnut = new Chart(document.getElementById("Serverless").getContext("2d")).Doughnut(doughnutData);
-                            </script>
-                        </div>
-
-                        <div class="col-lg-6" style="float:left;">
-                        <canvas id="CSharp" height="60" width="60"></canvas>
-                        <p>C#</p>
-                        <br>
-                        <script>
-                            var doughnutData = [
-                                    {
-                                        value: 80,
-                                        color:"#1abc9c"
-                                    },
-                                    {
-                                        value : 20,
-                                        color : "#ecf0f1"
-                                    }
-                                ];
-                                var myDoughnut = new Chart(document.getElementById("CSharp").getContext("2d")).Doughnut(doughnutData);
-                        </script>
-                        </div>
-                    </div>
-
-
-                    <!-- frontent -->
-                    <div class="col-lg-3 centered skillsgroup skillsgroup-additional">
-                    <div class="col-lg-12 skillsgroup-title">Frontend</div>
-                        <div class="col-lg-6" style="float:left;">
-                        <canvas id="iOS" height="60" width="60"></canvas>
-                        <p>iOS</p>
-                        <br>
-                        <script>
-                            var doughnutData = [
-                                    {
-                                        value: 50,
-                                        color:"#1abc9c"
-                                    },
-                                    {
-                                        value : 50,
-                                        color : "#ecf0f1"
-                                    }
-                                ];
-                                var myDoughnut = new Chart(document.getElementById("iOS").getContext("2d")).Doughnut(doughnutData);
-                        </script>
-                        </div>
-
-                        <div class="col-lg-6" style="float:left;">
-                        <canvas id="Android" height="60" width="60"></canvas>
-                        <p>Android</p>
-                        <br>
-                        <script>
-                            var doughnutData = [
-                                    {
-                                        value: 40,
-                                        color:"#1abc9c"
-                                    },
-                                    {
-                                        value : 60,
-                                        color : "#ecf0f1"
-                                    }
-                                ];
-                                var myDoughnut = new Chart(document.getElementById("Android").getContext("2d")).Doughnut(doughnutData);
-                        </script>
-                        </div>
-
-                        <div class="col-lg-6" style="float:left;">
-                        <canvas id="spring" height="60" width="60"></canvas>
-                        <p>Spring</p>
-                        <br>
-                        <script>
-                            var doughnutData = [
-                                    {
-                                        value: 50,
-                                        color:"#1abc9c"
-                                    },
-                                    {
-                                        value : 50,
-                                        color : "#ecf0f1"
-                                    }
-                                ];
-                                var myDoughnut = new Chart(document.getElementById("spring").getContext("2d")).Doughnut(doughnutData);
-                        </script>
-                        </div>
-
-
-                        <div class="col-lg-6" style="float:left;">
-                            <canvas id="javascript" height="60" width="60"></canvas>
-                            <p>JavaScript</p>
-                            <br>
-                            <script>
-                                var doughnutData = [
-                                        {
-                                            value: 70,
-                                            color:"#1abc9c"
-                                        },
-                                        {
-                                            value : 30,
-                                            color : "#ecf0f1"
-                                        }
-                                    ];
-                                    var myDoughnut = new Chart(document.getElementById("javascript").getContext("2d")).Doughnut(doughnutData);
-                            </script>
-                        </div>
-
-                        <div class="col-lg-6" style="float:left;">
-                        <canvas id="html5" height="60" width="60"></canvas>
-                        <p>HTML5</p>
-                        <br>
-                        <script>
-                            var doughnutData = [
-                                    {
-                                        value: 60,
-                                        color:"#1abc9c"
-                                    },
-                                    {
-                                        value : 40,
-                                        color : "#ecf0f1"
-                                    }
-                                ];
-                                var myDoughnut = new Chart(document.getElementById("html5").getContext("2d")).Doughnut(doughnutData);
-                        </script>
-                        </div>
-
-                        <div class="col-lg-6" style="float:left;">
-                        <canvas id="REST" height="60" width="60"></canvas>
-                        <p>REST</p>
-                        <br>
-                        <script>
-                            var doughnutData = [
-                                    {
-                                        value: 20,
-                                        color:"#1abc9c"
-                                    },
-                                    {
-                                        value : 80,
-                                        color : "#ecf0f1"
-                                    }
-                                ];
-                                var myDoughnut = new Chart(document.getElementById("REST").getContext("2d")).Doughnut(doughnutData);
-                        </script>
-                        </div>
-                    </div>
-
-                    <!-- infrastructure -->
-                    <div class="col-lg-3 centered skillsgroup skillsgroup-additional">
-                    <div class="col-lg-12 skillsgroup-title">Infrastructure</div>
-                        <div class="col-lg-6" style="float:left;">
-                            <canvas id="SQL" height="60" width="60"></canvas>
-                            <p>SQL</p>
-                            <br>
-                            <script>
-                                var doughnutData = [
-                                        {
-                                            value: 35,
-                                            color:"#1abc9c"
-                                        },
-                                        {
-                                            value : 65,
-                                            color : "#ecf0f1"
-                                        }
-                                    ];
-                                    var myDoughnut = new Chart(document.getElementById("SQL").getContext("2d")).Doughnut(doughnutData);
-                            </script>
-                        </div>
-
-                        <div class="col-lg-6" style="float:left;">
-                        <canvas id="kubernetes" height="60" width="60"></canvas>
-                        <p>Kubernetes</p>
-                        <br>
-                        <script>
-                            var doughnutData = [
-                                    {
-                                        value: 40,
-                                        color:"#1abc9c"
-                                    },
-                                    {
-                                        value : 60,
-                                        color : "#ecf0f1"
-                                    }
-                                ];
-                                var myDoughnut = new Chart(document.getElementById("kubernetes").getContext("2d")).Doughnut(doughnutData);
-                        </script>
-                        </div>
-
-                        <div class="col-lg-6" style="float:left;">
-                        <canvas id="AWS" height="60" width="60"></canvas>
-                        <p>AWS</p>
-                        <br>
-                        <script>
-                            var doughnutData = [
-                                    {
-                                        value: 45,
-                                        color:"#1abc9c"
-                                    },
-                                    {
-                                        value : 55,
-                                        color : "#ecf0f1"
-                                    }
-                                ];
-                                var myDoughnut = new Chart(document.getElementById("AWS").getContext("2d")).Doughnut(doughnutData);
-                        </script>
-                        </div>
-
-                        <div class="col-lg-6" style="float:left;">
-                        <canvas id="Redis" height="60" width="60"></canvas>
-                        <p>Redis</p>
-                        <br>
-                        <script>
-                            var doughnutData = [
-                                    {
-                                        value: 35,
-                                        color:"#1abc9c"
-                                    },
-                                    {
-                                        value : 65,
-                                        color : "#ecf0f1"
-                                    }
-                                ];
-                                var myDoughnut = new Chart(document.getElementById("Redis").getContext("2d")).Doughnut(doughnutData);
-                        </script>
-                        </div>
-
-                        <div class="col-lg-6" style="float:left;">
-                        <canvas id="Kafka" height="60" width="60"></canvas>
-                        <p>Kafka</p>
-                        <br>
-                        <script>
-                            var doughnutData = [
-                                    {
-                                        value: 70,
-                                        color:"#1abc9c"
-                                    },
-                                    {
-                                        value : 30,
-                                        color : "#ecf0f1"
-                                    }
-                                ];
-                                var myDoughnut = new Chart(document.getElementById("Kafka").getContext("2d")).Doughnut(doughnutData);
-                        </script>
-                        </div>
-
-                        <div class="col-lg-6" style="float:left;">
-                        <canvas id="Kinesis" height="60" width="60"></canvas>
-                        <p>Kinesis</p>
-                        <br>
-                        <script>
-                            var doughnutData = [
-                                    {
-                                        value: 20,
-                                        color:"#1abc9c"
-                                    },
-                                    {
-                                        value : 80,
-                                        color : "#ecf0f1"
-                                    }
-                                ];
-                                var myDoughnut = new Chart(document.getElementById("Kinesis").getContext("2d")).Doughnut(doughnutData);
-                        </script>
-                        </div>
-                    </div>
-            </div>
-            <br>
-        </div>
-    </div>
-
-
-    <section id="work" name="work"></section>
-    <!-- work -->
-    <div class="container desc">
-        <div class="row">
-            <div class="col-lg-2 col-lg-offset-1">
-                <h5>VARIED <!-- ASSORTMENT OF -->EXPERIENCE</h5>
-            </div>
-            <div class="col-lg-9">
-                <p class="project-label">BIG DATA<br />
-                    <em>Java, Go, AWS Lambda, Kinesis, DynamoDB, Redis, Redshift, Druid, Elasticsearch, Glue, Kafka, Storm, Spark, Flink</em>
-                </p>
-                <p>
-                <more>
-                    Built a system to collect, enrich, process, analyze, store and retrieve a data stream of hundreds of thousands of events per second. Results are used both in realtime in the core product as well as drive REST APIs and analytics dashboards.
-                    <br/>
-                    Evaluated the many different Big Data software stacks and rapidly prototyped solutions using each. At first using managed and serverless solutions on AWS including Lambda, Kinesis (all 3), DynamoDB, Elasticache, Glue, Athena, Redshift and later moving to a self managed open source technology stack of Kafka, Storm, Spark, Flink, Druid.
-                    <br />
-                    The processed data is fed to machine learning algorithms and made available, in realtime to edge nodes (PoPs) for decision making. Working closely with data scientists we created an unsupervised learning feedback loop.
-                    <br />
-                    I contributed to managing the infrastructure on baremetal and AWS as well as cost optimization for the various AWS services used.
-                    <br/><br/>
-                </more>
-            </p>
-            </div>
-            <div class="col-lg-9 col-lg-offset-3">
-                <p class="project-label">WEB VIDEO INDEXING<br />
-                    <em>Grails, MariaDB, TokuDB, RabbitMQ, Memcached, Redis, AWS</em>
-                </p>
-                <p>
-                <more>
-                    We built a web video indexing system which scaled to crawl 2000 urls per second, serve thousands of images per second, and deliver data to millions of users accross dozens of device classes.
-                    <br/>
-                    To scale such a system a service-oriented approach was adopted to force clear separation of concerns. This allowed the system to use technologies appropriate for a specific problem domain while insulating the rest of the services from those implementation details.
-                    <br />
-                    I built a web and feed crawling system using work scheduling and distribution through queuing. Each Grails worker process is able to operate and scale independently. This data is then inteligently categorized using NLP, Freebase, and some proprietary algorithms and stored in SQL databases that are horizontally sharded.
-                    <br />
-                    The data is delivered to end users via a REST JSON API which is also independently scalable horizontally. Images are ingested and delivered using a custom image processing system. The image server workers are able to scale, resize, color correct, and cache images on demand. Redundancy is achieved by a two level filesystem failover to S3.
-                    <br />
-                    I also managed the DevOps of hundreds of servers and services on Amazon Web Services.
-                    <br/><br/>
-                </more>
-            </p>
-            </div>
-
-            <div class="col-lg-9 col-lg-offset-3">
-                <p class="project-label">WEBKIT BASED RENDERER<br />
-                    <em>C++, Qt, CMake</em>
-                </p>
-                <p><more>
-                 As much of the web today is rendered using JavaScript rather than conventional HTML markup, a way to rapidly render millions of webpages is incredibly useful.
-                <br />
-                Using WebKit and the WebKitCore and JavaScriptCore libraries I built an efficient headless web renderer that was able to execute JavaScript on a DOM and deliver the HTML output via an API.
-                <br />
-                I loved the opportunity to learn and apply the Qt framework. I hope I get to use it again someday.
-                <br /><br/>
-                </more>
-                </p>
-            </div>
-
-            <div class="col-lg-9 col-lg-offset-3">
-                <p class="project-label">ANDROID TELEVISIONS<br />
-                    <em>Android, Java, Chromecast, JUnit</em>
-                </p>
-                <p><more>
-                Writing Android Television applications is hard, harder than it should be. But when an application is perfectly designed for television the experience can be incredible.
-                <br />
-                Designing SDKs and APIs for other developers is a passion of mine professionally. I loved creating Android SDKs for televisions and mobile applications. On TVs the Frequency app is designed from the ground up to support a variety of Android flavors, vendors' forks, and input methods. 
-                <br />
-                I designed and created all of the Frequency applications on televsions and mobile devices. I also created a custom Chromecast Recevier App that supplements the Frequency phone and tablet experience.
-                <br />
-                <br/><br/>
-                </more>
-                </p>
-            </div>
-        </div>
-        <br>
-        <br>
-    </div>
-
-
-    <section id="contact" name="contact"></section>
-    <!-- footer -->
-    <div id="footwrap">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-2 col-lg-offset-1">
-                    <h5>CONTACT</h5>
-                </div>
-                <div class="col-lg-2">
-                    <p>
-                        <t>Email</t><br/>
-                        <a href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#122;&#97;&#99;&#107;&#64;&#98;&#97;&#114;&#116;&#101;&#108;&#46;&#99;&#111;&#109;'>&#122;&#97;&#99;&#107;&#64;&#98;&#97;&#114;&#116;&#101;&#108;&#46;&#99;&#111;&#109;</a><br/>
-                    </p>
-                </div>
-                <div class="col-lg-2">
-                    <p>
-                        <t>Twitter</t><br/>
-                        <a href="https://twitter.com/zackzbz">zackzbz</a><br/>
-                    </p>
-                </div>
-                <div class="col-lg-2">
-                    <p>
-                        <t>GitHub</t><br/>
-                        <a href="https://github.com/zackb">zackb</a><br/>
-                    </p>
-                </div>
-                <div class="col-lg-2">
-                    <p>
-                        <t>AppStore</t><br/>
-                        <a href="https://apps.apple.com/us/developer/zack-bartel/id1069647834">Zack</a><br/>
-                    </p>
-                </div>
+            <div class="link-item">
+                <span class="link-label">linkedin:</span>
+                <a href="https://www.linkedin.com/in/zackbartel/" target="_blank">linkedin.com/in/zackbartel</a>
             </div>
         </div>
     </div>
 
-    <div id="c">
-        <div class="container">
-            <p>&copy; 2019 <a href="//zackbartel.com">Zack Bartel</a></p>
-        </div>
+    <div class="section">
+        <div class="section-title">// stack</div>
+        <p class="tech-list">
+            C/C++ · Go · Java · Linux · Neovim<br>
+            Kubernetes · Databases · Kafka · AWS/GCP<br>
+            Big Data · REST APIs · iOS
+        </p>
     </div>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-  </body>
+
+    <div class="section">
+        <div class="section-title">// experience</div>
+        <p class="tech-list">
+            Currently: Systems and security software development<br>
+            Previously: Data pipelines, distributed systems, mobile, full-stack
+        </p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">// projects</div>
+        <p class="tech-list">
+            <a href="https://github.com/zackb/hyprwat">Hyprwat</a>: Wayland native menu thingy I made<br>
+            <a href="https://github.com/zackb/forcecode">ForceCode</a>: Accessible morse code app for iOS<br>
+            <a href="https://github.com/zackb/asgard">Asgard</a>: Kubernetes on raspberry pi using terraform<br>
+            <a href="https://continuum.zackbartel.com/">Continuum</a>: Store and analyze time series data in a new way
+        </p>
+    </div>
+
+    <div style="margin-top: 3rem; opacity: 0.5;">
+        <span class="blink">_</span>
+    </div>
+</body>
+
 </html>
