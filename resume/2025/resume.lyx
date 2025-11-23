@@ -305,6 +305,8 @@ Stack:
  Scala,
  Typescript,
  Kubernetes,
+ Kafka,
+ NATS,
  Terraform
 \end_layout
 
@@ -377,7 +379,8 @@ Stack:
  Flink,
  Druid,
  Elasticsearch,
- Redis 
+ Redis,
+ NATS
 \end_layout
 
 \begin_layout Itemize
