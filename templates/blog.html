@@ -6,6 +6,14 @@
     <h1>Blog</h1>
     <p class="subtitle">Thoughts on programming, Linux, chess, and Zen</p>
 
+    <!-- Tag filter section -->
+    <div class="tag-filter" id="tagFilter" style="display: none; margin-bottom: 1.5rem;">
+        <span style="opacity: 0.6;">Filtering by:</span>
+        <span class="tag active-filter" id="activeTag"></span>
+        <button onclick="clearFilter()"
+            style="margin-left: 0.5rem; cursor: pointer; background: none; border: 1px solid currentColor; padding: 0.1rem 0.5rem; border-radius: 3px;">clear</button>
+    </div>
+
     <div class="posts">
         {{ $year := 0 }}
         {{ range $.Posts }}
@@ -14,11 +22,11 @@
         {{- if gt $year 0 }}
     </div>
     {{- end }}
-    <div class="year-section">
+    <div class="year-section" data-year="{{ .DatePublished.Year }}">
         <h2 class="year-header">{{ .DatePublished.Year }}</h2>
         {{- $year = .DatePublished.Year -}}
         {{ end }}
-        <article class="post-item">
+        <article class="post-item" data-tags="{{ range $i, $tag := .Tags }}{{ if $i }},{{ end }}{{ $tag }}{{ end }}">
             <time class="post-date">{{ .DatePublished.Format "Jan 02" }}</time>
             <div class="post-content">
                 <a href="/{{ .UrlPath }}" class="post-title">{{ .Title }}</a>
@@ -28,7 +36,7 @@
                 {{ if .Tags }}
                 <div class="post-tags">
                     {{ range .Tags }}
-                    <span class="tag">{{ . }}</span>
+                    <span class="tag" onclick="filterByTag('{{ . }}')" style="cursor: pointer;">{{ . }}</span>
                     {{ end }}
                 </div>
                 {{ end }}
@@ -38,14 +46,75 @@
         {{ end }}
     </div>
     </div>
-
     <div class="prompt">
         <span class="blink">_</span>
     </div>
+
+    <script>
+        let currentFilter = null;
+
+        function filterByTag(tag) {
+            currentFilter = tag;
+            const posts = document.querySelectorAll('.post-item');
+            const years = document.querySelectorAll('.year-section');
+
+            // Show filter indicator
+            document.getElementById('tagFilter').style.display = 'block';
+            document.getElementById('activeTag').textContent = tag;
+
+            // filter posts
+            posts.forEach(post => {
+                const tags = post.dataset.tags.split(',');
+                if (tags.includes(tag)) {
+                    post.style.display = 'flex';
+                } else {
+                    post.style.display = 'none';
+                }
+            });
+
+            // hide year headers with no visible posts
+            years.forEach(year => {
+                const visiblePosts = Array.from(year.querySelectorAll('.post-item'))
+                    .some(post => post.style.display !== 'none');
+                year.style.display = visiblePosts ? 'block' : 'none';
+            });
+        }
+
+        function clearFilter() {
+            currentFilter = null;
+            document.getElementById('tagFilter').style.display = 'none';
+
+            // Show all posts and years
+            document.querySelectorAll('.post-item').forEach(post => {
+                post.style.display = 'flex';
+            });
+            document.querySelectorAll('.year-section').forEach(year => {
+                year.style.display = 'block';
+            });
+        }
+
+        // check url hash for filtered views
+        window.addEventListener('load', () => {
+            const hash = window.location.hash.slice(1);
+            if (hash.startsWith('tag=')) {
+                filterByTag(decodeURIComponent(hash.slice(4)));
+            }
+        });
+
+        // update url when filtering
+        const originalFilterByTag = filterByTag;
+        filterByTag = function (tag) {
+            originalFilterByTag(tag);
+            window.location.hash = 'tag=' + encodeURIComponent(tag);
+        };
+
+        const originalClearFilter = clearFilter;
+        clearFilter = function () {
+            originalClearFilter();
+            history.replaceState(null, null, ' ');
+        };
+    </script>
 </body>
 
 </html>
-
-
-
 {{ template "_footer.html" .}}
