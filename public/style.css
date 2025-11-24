@@ -79,6 +79,110 @@ a:hover {
     opacity: 0.8;
 }
 
+.subtitle {
+    color: #f8f8f2;
+    opacity: 0.7;
+    margin-bottom: 2rem;
+}
+
+nav {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #44475a;
+}
+
+nav a {
+    color: #bd93f9;
+    text-decoration: none;
+    margin-right: 1.5rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+nav a:hover {
+    color: #ff79c6;
+}
+
+nav a svg {
+    vertical-align: middle;
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.year-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.year-header {
+    color: #ff79c6;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.post-item {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid #44475a;
+}
+
+.year-section .post-item:last-child {
+    border-bottom: none;
+}
+
+.post-date {
+    color: #6272a4;
+    min-width: 70px;
+    flex-shrink: 0;
+    font-size: 0.9rem;
+}
+
+.post-content {
+    flex: 1;
+}
+
+.post-title {
+    color: #8be9fd;
+    text-decoration: none;
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.post-title:hover {
+    color: #ff79c6;
+}
+
+.post-description {
+    color: #f8f8f2;
+    opacity: 0.7;
+    font-size: 0.9rem;
+}
+
+.post-tags {
+    margin-top: 0.5rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.tag {
+    color: #50fa7b;
+    font-size: 0.85rem;
+}
+
+.tag::before {
+    content: '#';
+}
+
 .blink {
     animation: blink 1s infinite;
 }

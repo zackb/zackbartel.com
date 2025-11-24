@@ -1,17 +1,65 @@
 {{ template "_header.html" .}}
 
 <body>
-    <div class="prompt">cat {{ .Page.Filepath }} </div>
-    <h1>{{ .Title }} </h1>
-    <div class="section-title">
-        // {{ .Page.DatePublished.Format `Jan 2, 2006` }}
+    <nav>
+        <a href="/">home</a>
+        <a href="/blog">blog</a>
+        <a href="https://github.com/zackb">github</a>
+        <a href="/feed.xml" class="rss-link" title="RSS Feed">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 11a9 9 0 0 1 9 9"></path>
+                <path d="M4 4a16 16 0 0 1 16 16"></path>
+                <circle cx="5" cy="19" r="1"></circle>
+            </svg>
+            rss
+        </a>
+    </nav>
+
+    <div class="prompt">ls -la /blog</div>
+    <h1>Blog</h1>
+    <p class="subtitle">Thoughts on systems, code, and infrastructure</p>
+
+    <div class="posts">
+        {{ $year := 0 }}
+        {{ range $.Posts }}
+        {{ if not .Draft }}
+        {{- if not (eq .DatePublished.Year $year) }}
+        {{- if gt $year 0 }}
     </div>
-    <div class="section">
-        {{ .Content }}
+    {{- end }}
+    <div class="year-section">
+        <h2 class="year-header">{{ .DatePublished.Year }}</h2>
+        {{- $year = .DatePublished.Year -}}
+        {{ end }}
+        <article class="post-item">
+            <time class="post-date">{{ .DatePublished.Format "Jan 02" }}</time>
+            <div class="post-content">
+                <a href="/{{ .UrlPath }}" class="post-title">{{ .Title }}</a>
+                {{ if .Description }}
+                <p class="post-description">{{ .Description }}</p>
+                {{ end }}
+                {{ if .Tags }}
+                <div class="post-tags">
+                    {{ range .Tags }}
+                    <span class="tag">{{ . }}</span>
+                    {{ end }}
+                </div>
+                {{ end }}
+            </div>
+        </article>
+        {{ end }}
+        {{ end }}
     </div>
-    <div class="prompt">
+    </div>
+
+    <div style="margin-top: 3rem; opacity: 0.5;">
         <span class="blink">_</span>
     </div>
 </body>
+
+</html>
+
+
 
 {{ template "_footer.html" .}}
