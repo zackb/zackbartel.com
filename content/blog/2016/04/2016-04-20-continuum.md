@@ -24,15 +24,9 @@ But it comes with a challenge: volume.
 
 We need to answer two fundamentally different types of questions:
 
-<br>
-
 1. **Traditional time-series queries**: What's our average bitrate across all users in the last hour? How many buffer events are occurring in North America right now?
 
-<br>
-
 2. **Session-level analysis**: What is *this specific user's* experience during *their particular viewing session*? Are they experiencing buffering? What's their bitrate progression over time?
-
-<br>
 
 
 The second type of query is what I call "time-key-value" data - high cardinality time series where each unique session ID creates its own timeline of metrics. This was the thing no existing solution solved well.
@@ -55,8 +49,6 @@ I've created Continuum as a JVM library that handles both traditional time serie
 - [Documentation](https://continuum.zackbartel.com/)
 - [GitHub Repository](https://github.com/zackb/continuum)
 - [The Pitch Deck](https://continuum.zackbartel.com/img/Continuum.pdf) (yes, I made a quirky presentation to pitch this internally)
-
-<br>
 
 ```   
 // open continuum

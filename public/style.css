@@ -30,6 +30,15 @@ h1 {
     color: #8be9fd;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    display: block;
+    margin: 0 auto;
+}
+
 .bio {
     margin-bottom: 2rem;
     color: #f8f8f2;

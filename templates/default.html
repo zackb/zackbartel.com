@@ -4,9 +4,11 @@
     {{ template "_nav.html" .}}
     <div class="prompt">cat {{ .Page.Filepath }} </div>
     <h1>{{ .Title }} </h1>
+    {{ if not .Page.DatePublished.IsZero }}
     <div class="section-title">
         // {{ .Page.DatePublished.Format `Jan 2, 2006` }}
     </div>
+    {{ end }}
     <div class="post-tags">
         {{ range .Tags }}
         <span class="tag">{{ . }}</span>
