@@ -1,0 +1,17 @@
+{{ template "_header.html" .}}
+
+<body>
+    <div class="prompt">cat {{ .Page.Filepath }} </div>
+    <h1>{{ .Title }} </h1>
+    <div class="section-title">
+        // {{ .Page.DatePublished.Format `Jan 2, 2006` }}
+    </div>
+    <div class="section">
+        {{ .Content }}
+    </div>
+    <div class="prompt">
+        <span class="blink">_</span>
+    </div>
+</body>
+
+{{ template "_footer.html" .}}

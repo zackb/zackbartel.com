@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="/style.css?v={{ .Now.Unix }}">
+    <title>{{ .Title }}{{ if ne .Page.UrlPath "" }} - {{ .Site.Title }}{{ end }}</title>
+    <link rel="canonical" href="{{ .Page.Permalink }}">
+    <link rel="alternate" type="application/rss+xml" href="/feed.xml">
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+    {{ if not .Page.DatePublished.IsZero -}}
+    <meta property="og:title" content="{{ .Page.Title }}">
+    <meta property="og:url" content="{{ .Page.Permalink }}">
+    <meta property="og:image" content="{{ .Site.Url }}img/avatar.jpeg">
+    <meta property="og:site_name" content="{{ .Site.Title }}">
+    {{- end -}}
+    <meta name="fediverse:creator" content="@zackzbz@mastodon.social">
+</head>
