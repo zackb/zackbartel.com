@@ -1,6 +1,7 @@
 {{ template "_header.html" .}}
 
 <body>
+    {{ template "_nav.html" .}}
     <div class="prompt">cat {{ .Page.Filepath }} </div>
     <h1>{{ .Title }} </h1>
     <div class="section-title">
