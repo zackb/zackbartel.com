@@ -4,7 +4,7 @@
     {{ template "_nav.html" .}}
     <div class="prompt">ls -la /blog</div>
     <h1>Blog</h1>
-    <p class="subtitle">Thoughts on systems, code, and infrastructure</p>
+    <p class="subtitle">Thoughts on programming, Linux, chess, and Zen</p>
 
     <div class="posts">
         {{ $year := 0 }}
@@ -22,8 +22,8 @@
             <time class="post-date">{{ .DatePublished.Format "Jan 02" }}</time>
             <div class="post-content">
                 <a href="/{{ .UrlPath }}" class="post-title">{{ .Title }}</a>
-                {{ if .Description }}
-                <p class="post-description">{{ .Description }}</p>
+                {{ if .Summary }}
+                <p class="post-description">{{ .Summary }}</p>
                 {{ end }}
                 {{ if .Tags }}
                 <div class="post-tags">
@@ -39,7 +39,7 @@
     </div>
     </div>
 
-    <div style="margin-top: 3rem; opacity: 0.5;">
+    <div class="prompt">
         <span class="blink">_</span>
     </div>
 </body>
