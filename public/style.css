@@ -183,6 +183,106 @@ nav a svg {
     content: '#';
 }
 
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 1.5rem 0;
+}
+
+ul li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+}
+
+ul li::before {
+    content: "›";
+    position: absolute;
+    left: 0;
+    opacity: 0.6;
+    font-weight: bold;
+}
+
+ul ul {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+ul ul li::before {
+    content: "–";
+}
+
+ol {
+    padding-left: 1.8rem;
+    margin: 1.5rem 0;
+}
+
+ol li {
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+    padding-left: 0.5rem;
+}
+
+/* alt
+ul li::before {
+    content: "[";
+}
+
+ul li::after {
+    content: "]";
+    position: absolute;
+    left: 0.7rem;
+    opacity: 0.6;
+}
+*/
+
+
+pre {
+    background: rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    padding: 1rem;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+    line-height: 1.5;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9em;
+}
+
+p code,
+li code {
+    background: rgba(0, 0, 0, 0.05);
+    padding: 0.15em 0.4em;
+    border-radius: 3px;
+    font-size: 0.88em;
+}
+
+pre code {
+    background: none;
+    padding: 0;
+    font-size: 0.9em;
+    display: block;
+}
+
+/* cute but doesnt work
+pre::before {
+    content: "$";
+    opacity: 0.3;
+    margin-right: 0.5rem;
+    user-select: none;
+}
+
+/* remove prompt for non-bash code blocks
+pre:has(code[class*="language-"]:not(.language-bash)):not(:has(.language-sh))::before {
+    content: "";
+    margin-right: 0;
+}
+ */
+
 .blink {
     animation: blink 1s infinite;
 }
