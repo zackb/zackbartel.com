@@ -24,7 +24,7 @@ I was tired of dealing with the complexities. The syntax was verbose, error mess
 
 <br>
 
-Whenever I had to use JNI or some other [FFI](https://en.wikipedia.org/wiki/Foreign_function_interface) (Foreign Function Interface), I felt weak. I don't want to have to wait for some third-party library to bind to my favorite language. I want to write high-performance code directly.
+Whenever I had to use JNI or some other [FFI](https://en.wikipedia.org/wiki/Foreign_function_interface) (Foreign Function Interface), I felt weak. I don't want to have to wait for some third-party library to bind to my favorite language. I want to write high-performance code directly. But at that time I just didn't feel like C++ was a reasonable choice.
 
 <br>
 
