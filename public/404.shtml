@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="/style.css?v=1764041426">
+    <title>Zack Bartel</title>
+    <link rel="canonical" href="https://zackbartel.com/">
+    <link rel="alternate" type="application/rss+xml" href="/feed.xml">
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+    <meta name="fediverse:creator" content="@zackzbz@mastodon.social">
+</head>
+
+
+<body>
+    <nav>
+        <a href="/">/home</a>
+        <a href="/blog">blog</a>
+        <a href="https://github.com/zackb">github</a>
+        <a href="/feed.xml" class="rss-link" title="RSS Feed">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 11a9 9 0 0 1 9 9"></path>
+                <path d="M4 4a16 16 0 0 1 16 16"></path>
+                <circle cx="5" cy="19" r="1"></circle>
+            </svg>
+            rss
+        </a>
+    </nav>
+
+    <div class="prompt">cat: No such file or directory</div>
+    <h1>Not Found</h1>
+    <p class="bio">
+        404 - page not found.
+    </p>
+
+    <div class="section">
+    </div>
+    <div class="prompt">
+        <span class="blink">_</span>
+    </div>
+</body>
+
+<footer>
+</footer>
+
+</html>

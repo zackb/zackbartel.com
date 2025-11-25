@@ -1,13 +1,14 @@
-.PHONY: blog
+.PHONY: build
 
 default:
 	@echo "Hello"
 
-deploy:
+deploy: build
 	rsync -av --exclude='.git/' build/ zackbart@zackbartel.com:~/web
 
 serve:
 	gozer serve
 
-blog:
+build:
+	rm -Rf build
 	gozer build
