@@ -57,7 +57,7 @@ After a completely unrelated need arose to have a Linux development environment,
 
 <br>
 
-The funniest thing about the whole process is how awful the pre-loaded Windoes experience was. Their beloved OOBE experience is a joke. It took me hours to get the system into a usable state, and it was unusably slow.
+The funniest thing about the whole process is how awful the pre-loaded Windows experience was. Their beloved OOBE experience is a joke. It took me hours to get the system into a usable state, and it was unusably slow.
 
 
 <br>
