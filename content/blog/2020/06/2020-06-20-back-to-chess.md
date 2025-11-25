@@ -5,7 +5,7 @@ tags = ["chess"]
 +++
 
 ### Rediscovering Chess ###
-I used to play chess quite a bit, and by brother Jake would always beat me. It kinda made me lose interest and not want to play at all. I've never really liked things I'm not good at, or at least things my brother is better at. But recently, I had a motivator I could not ignore.
+I used to play chess quite a bit, and my brother Jake would always beat me. It kinda made me lose interest and not want to play at all. I've never really liked things I'm not good at, or at least things my brother is better at. But recently, I had a motivator I could not ignore.
 
 <br>
 
