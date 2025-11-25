@@ -1,14 +1,16 @@
 +++
-title = "Introducing Continuum: A Pragmatic Solution to High-Cardinality Time Series Analysis"
+title = "Continuum: A Pragmatic Solution to High-Cardinality Time Series Analysis"
 summary = "A Java library that efficiently handles both traditional time series and high-cardinality time-key-value data using RocksDB."
 tags = ["programming", "java", "data"]
 +++
+
+<br>
 
 I'm excited to share a project I've been working on that solves a problem many engineers at growing startups face: massive amounts of streaming data to analyze, but the "right" solutions are prohibitively expensive. So I built something different.
 
 <br>
 
-## The Problem: Video Streaming at Scale
+## Video Streaming at Scale
 
 I work at a video streaming company (CDN accelerator) that delivers HLS chunks to viewers across the globe. Every single chunk we deliver gives us an opportunity to measure Quality of Experience (QoE) on the server side. This is incredibly valuable data:
 - buffer events
