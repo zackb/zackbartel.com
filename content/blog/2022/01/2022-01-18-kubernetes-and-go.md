@@ -1,5 +1,5 @@
 +++
-title = "Kubernetes loves Go"
+title = "Kubernetes Loves Go"
 summary = "Building a custom Kubernetes controller in Go."
 tags = ["programming", "go", "kubernetes"]
 +++
