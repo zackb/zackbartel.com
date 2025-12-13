@@ -8,7 +8,7 @@ tags = ["programming", "linux"]
 
 <br>
 
-Update: Liquid Glass is awful.
+***Update***: Liquid Glass is awful, and the number of bugs in all of Apple's platforms is no longer acceptable. My 2017 ***iMac Pro*** was working fine for what I needed. Yes, it's old but for what I do (edit C code in vim, play chess online) it was great. But after installing Tahoe it's noticeably slower, buggier, and plaqued with permission popus and "unexpected error" dialogs. My Apple ***TV*** is annoying now, there are too many clicks to do anything, it's slower, the remote stopped working correctly. My ***watch*** is slower, battery life worse, again with the UI taking more taps to do what I used to be able to do. Hopefully the post-Allan Dye era will be a renaissance for Apple software like the post-Johny Ive era is for hardware.
 
 <br>
 
